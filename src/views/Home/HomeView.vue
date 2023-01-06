@@ -19,7 +19,9 @@
           <img src="../../assets/avaliacao.png" alt="Avaliação da empresa de 4,8 de 5 estrelas">
         </div>
       </div>
-      <img src="../../assets/fazendeiro.png" alt="Imagem de um fazendeiro feliz" id="fazendeiro">
+      <img src="https://i.ibb.co/LzZ3PKf/circulo-verde.png" alt="circulo-verde" id="circulo-verde">
+      <img src="https://i.ibb.co/XjGDmDB/aro-aberto.png" alt="aro-aberto" id="aro-aberto">
+      <img src="https://i.ibb.co/cDynFQ6/fazendeiro-removebg-preview-1.png" alt="fazendeiro-removebg-preview-1" id="fazendeiro">
     </div>
   </div>
 </template>
@@ -53,11 +55,23 @@ export default {
 }
 
 #fazendeiro {
-  width: 1000px;
-  height: 800px;
+  width: 675px;
+  height: 750px;
   position: absolute;
   bottom: 0;
-  right: 100px;
+  right: 175px;
+}
+
+#circulo-verde {
+  position: absolute;
+  bottom: 0;
+  right: 275px;
+}
+
+#aro-aberto {
+  position: absolute;
+  bottom: 0;
+  right: 275px;
 }
 
 #left-main-container{
@@ -117,5 +131,72 @@ export default {
   width: 500px;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (max-width: 1440px) {
+  #circulo-verde,
+  #aro-aberto {
+    right: 200px;
+  }
+
+  #fazendeiro {
+    right: 100px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  #circulo-verde,
+  #aro-aberto {
+    right: 150px;
+  }
+
+  #fazendeiro {
+    right: 50px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #circulo-verde,
+  #aro-aberto {
+    right: 100px;
+  }
+
+  #fazendeiro {
+    right: 0;
+  }
+}
+
+@media screen and (max-height: 830px) {
+  #circulo-verde {
+    width: calc(550px - 75px);
+    height: calc(500px - 75px);
+  }
+
+  #aro-aberto {
+    width: calc(515px - 75px);
+    height: calc(530px - 75px);
+  }
+
+  #fazendeiro {
+    width: calc(675px - 100px);
+    height: calc(750px - 100px);
+  }
+}
+
+@media screen and (max-height: 768px) {
+  #circulo-verde {
+    width: calc(550px - 100px);
+    height: calc(500px - 100px);
+  }
+
+  #aro-aberto {
+    width: calc(515px - 100px);
+    height: calc(530px - 100px);
+  }
+
+  #fazendeiro {
+    width: calc(675px - 150px);
+    height: calc(750px - 150px);
+  }
 }
 </style>

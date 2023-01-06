@@ -83,4 +83,33 @@ export default {
 .active {
   color: #CFFD00;
 }
+
+@media screen and (max-width: 1440px) {
+  #links-navbar,
+  #container-navbar {
+    gap: 35px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  #links-navbar,
+  #container-navbar {
+    gap: 25px;
+  }
+
+  #navbar {
+    padding: 0 110px 0 75px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #links-navbar {
+    gap: 15px;
+  }
+
+  #navbar {
+    padding: 0 70px 0 35px;
+  }
+}
+
 </style>
