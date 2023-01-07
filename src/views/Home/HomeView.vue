@@ -121,9 +121,9 @@ export default {
 }
 
 #linha-vertical {
-  height: 40px;
-  border: 2px solid;
-  width: 0;
+  width: 40px;
+  transform: rotate(90deg);
+  border: 1px solid;
 }
 
 .bottom-left-main-container {

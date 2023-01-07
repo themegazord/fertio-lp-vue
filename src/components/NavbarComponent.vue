@@ -8,7 +8,10 @@
           to="/"
           :class="{ 'active': $route.name === 'home' }">Home
         </router-link>
-        <router-link class="link-navbar" to="/quem-somos">Quem Somos</router-link>
+        <router-link
+          class="link-navbar"
+          to="/quem-somos"
+          :class="{ 'active': $route.name === 'quem-somos' }">Quem Somos</router-link>
         <router-link class="link-navbar" to="/produtos">Produtos</router-link>
         <router-link class="link-navbar" to="/parceiros">Parceiros</router-link>
         <router-link class="link-navbar" to="/contatos">Contatos</router-link>

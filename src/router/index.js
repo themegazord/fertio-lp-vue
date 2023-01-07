@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import HomeView from '../views/Home/HomeView.vue';
+import QuemSomos from '../views/QuemSomos/QuemSomos.vue';
 
 Vue.use(VueRouter);
 
@@ -13,6 +14,7 @@ const routes = [
   {
     path: '/quem-somos',
     name: 'quem-somos',
+    component: QuemSomos,
   },
   {
     path: '/produtos',
