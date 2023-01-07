@@ -249,37 +249,60 @@ export default {
   }
 }
 
-@media screen and (max-width: 1600px) {
-  #quadrado-verde {
-    top: calc(230px - 15px);
-    left: calc(310px - 10px);
-    width: calc(380px - 70px);
-    height: calc(380px - 70px);
+@media screen and (max-width: 1660px) {
+  #title-info-quemsomos-main-container {
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(45px + 11.25px);
+    line-height: 60px;
+    color: #092E58;
+  }
+
+  #desc-info-quemsomos-main-container {
+    width: 90%;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(22px + 4.25px);
+    line-height: calc(32px + .5px);
+    color: #383A47;
+    mix-blend-mode: normal;
+    opacity: 0.8;
   }
 
   #veio-qv {
-    width: calc(900px - 100px);
-    height: calc(600px - 100px);
-    top: 88px;
-    left: 10px;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 35%, 56% 100%, 15% 36%);
+    width: calc(900px + 287.5px);
+    height: calc(600px + 150px);
+    top: calc(230px - 265px);
+    left: calc(310px - 545px);
+  }
+
+  #quadrado-verde {
+    width: calc(380px + 45px);
+    height: calc(380px + 45px);
+    top: calc(230px - 21.67px);
+    left: calc(310px - 101.67px);
   }
 
   #quadrado-claro {
-    width: calc(450px - 100px);
-    height: calc(450px - 100px);
-    top: 200px;
-    left: 285px;
+    width: calc(450px + 50px);
+    height: calc(450px + 50px);
+    top: calc(230px - 30px);
+    left: calc(310px - 135px);
   }
 
   #subquadrado-esquerda {
-    top: 250px;
-    left: 200px;
+    width: calc(200px + 50px);
+    height: calc(180px + 45px);
+    top: calc(250px - 41.67px);
+    left: calc(200px - 75px);
   }
 
   #subquadrado-direita {
-    top: 300px;
-    left: calc(630px - 60px);
+    width: calc(200px + 50px);
+    height: calc(180px + 45px);
+    top: calc(300px + 62.5px);
+    left: calc(630px - 48.75px);
   }
 }
 
