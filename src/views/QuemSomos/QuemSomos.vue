@@ -41,6 +41,10 @@ export default {
 </script>
 
 <style>
+#quem-somos {
+  overflow: hidden;
+}
+
 #quemsomos-main-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -131,6 +135,120 @@ export default {
   left: 630px;
 }
 
+@media screen and (max-width: 2560px) {
+  #title-info-quemsomos-main-container {
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(45px + 30px);
+    line-height: 60px;
+    color: #092E58;
+  }
+
+  #desc-info-quemsomos-main-container {
+    width: 90%;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(22px + 20px);
+    line-height: calc(32px + 20px);
+    color: #383A47;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+
+  #veio-qv {
+    width: calc(900px + 900px);
+    height: calc(600px + 600px);
+    top: calc(230px - 270px);
+    left: calc(310px - 590px);
+  }
+
+  #quadrado-verde {
+    width: calc(380px + 300px);
+    height: calc(380px + 300px);
+    top: calc(230px + 100px);
+    left: calc(310px + 50px);
+  }
+
+  #quadrado-claro {
+    width: calc(450px + 350px);
+    height: calc(450px + 350px);
+    top: calc(230px + 50px);
+    left: calc(310px + 10px);
+  }
+
+  #subquadrado-esquerda {
+    width: calc(200px + 200px);
+    height: calc(180px + 180px);
+    top: 250px;
+    left: 200px;
+  }
+
+  #subquadrado-direita {
+    width: calc(200px + 200px);
+    height: calc(180px + 180px);
+    top: calc(300px + 250px);
+    left: calc(630px + 300px);
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  #title-info-quemsomos-main-container {
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(45px + 11.25px);
+    line-height: 60px;
+    color: #092E58;
+  }
+
+  #desc-info-quemsomos-main-container {
+    width: 90%;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(22px + 9.5px);
+    line-height: calc(32px + 7px);
+    color: #383A47;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+
+  #veio-qv {
+    width: calc(900px + 525px);
+    height: calc(600px + 300px);
+    top: calc(230px - 270px);
+    left: calc(310px - 590px);
+  }
+
+  #quadrado-verde {
+    width: calc(380px + 130px);
+    height: calc(380px + 130px);
+    top: calc(230px + 20px);
+    left: calc(310px - 60px);
+  }
+
+  #quadrado-claro {
+    width: calc(450px + 150px);
+    height: calc(450px + 150px);
+    top: calc(230px + 10px);
+    left: calc(310px - 100px);
+  }
+
+  #subquadrado-esquerda {
+    width: calc(200px + 100px);
+    height: calc(180px + 90px);
+    top: 250px;
+    left: calc(200px - 50px);
+  }
+
+  #subquadrado-direita {
+    width: calc(200px + 100px);
+    height: calc(180px + 90px);
+    top: calc(300px + 75px);
+    left: calc(630px + 67.5px);
+  }
+}
+
 @media screen and (max-width: 1600px) {
   #quadrado-verde {
     top: calc(230px - 15px);
@@ -164,6 +282,7 @@ export default {
     left: calc(630px - 60px);
   }
 }
+
 @media screen and (max-width: 1440px) {
   #desc-info-quemsomos-main-container {
     width: 75%;
@@ -172,25 +291,25 @@ export default {
 
 @media screen and (max-width: 1280px) {
   #quadrado-verde {
-    top: calc(230px - 80px);
-    left: calc(310px - 85px);
-    width: calc(380px - 140px);
-    height: calc(380px - 140px);
+    top: calc(230px - 50px);
+    left: calc(310px - 125px);
+    width: calc(380px - 40px);
+    height: calc(380px - 40px);
   }
 
   #veio-qv {
-    width: calc(900px - 300px);
-    height: calc(600px - 200px);
+    width: calc(900px - 100px);
+    height: calc(600px - 50px);
     top: calc(90px - 50px);
-    left: 10px;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 35%, 56% 100%, 15% 38%);
+    left: calc(10px - 100px);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 35%, 56% 100%, 15% 40%);
   }
 
   #quadrado-claro {
-    width: calc(450px - 150px);
-    height: calc(450px - 150px);
-    top: calc(200px - 80px);
-    left: calc(285px - 90px);
+    width: calc(450px - 50px);
+    height: calc(450px - 50px);
+    top: calc(200px - 30px);
+    left: calc(285px - 130px);
   }
 
   #subquadrado-esquerda {
@@ -200,7 +319,7 @@ export default {
 
   #subquadrado-direita {
     top: calc(300px - 50px);
-    left: calc(570px - 190px);
+    left: calc(570px - 130px);
   }
 }
 
