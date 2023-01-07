@@ -170,6 +170,40 @@ export default {
   }
 }
 
+@media screen and (max-width: 1280px) {
+  #quadrado-verde {
+    top: calc(230px - 80px);
+    left: calc(310px - 85px);
+    width: calc(380px - 140px);
+    height: calc(380px - 140px);
+  }
+
+  #veio-qv {
+    width: calc(900px - 300px);
+    height: calc(600px - 200px);
+    top: calc(90px - 50px);
+    left: 10px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 35%, 56% 100%, 15% 38%);
+  }
+
+  #quadrado-claro {
+    width: calc(450px - 150px);
+    height: calc(450px - 150px);
+    top: calc(200px - 80px);
+    left: calc(285px - 90px);
+  }
+
+  #subquadrado-esquerda {
+    top: calc(250px - 50px);
+    left: calc(200px - 90px);
+  }
+
+  #subquadrado-direita {
+    top: calc(300px - 50px);
+    left: calc(570px - 190px);
+  }
+}
+
 @media screen and (max-width: 1024px) {
   #desc-info-quemsomos-main-container {
     width: 85%;
