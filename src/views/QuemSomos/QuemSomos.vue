@@ -3,12 +3,15 @@
     <Navbar />
     <div id="quemsomos-main-container">
       <div id="compo-quemsomos-main-container">
-        <img src="https://i.ibb.co/BKWDrFt/Group-removebg-preview.png" alt="Group-removebg-preview" id="subquadrado-esquerda"/>
-        <img src="https://i.ibb.co/BKWDrFt/Group-removebg-preview.png" alt="Group-removebg-preview" id="subquadrado-direita"/>
-        <img src="https://i.ibb.co/fNWXp0b/Rectangle-4580.png" alt="Rectangle-4580" id="quadrado-claro"/>
+        <img src="https://i.ibb.co/BKWDrFt/Group-removebg-preview.png" alt="Group-removebg-preview"
+          id="subquadrado-esquerda" />
+        <img src="https://i.ibb.co/BKWDrFt/Group-removebg-preview.png" alt="Group-removebg-preview"
+          id="subquadrado-direita" />
+        <img src="https://i.ibb.co/fNWXp0b/Rectangle-4580.png" alt="Rectangle-4580" id="quadrado-claro" />
         <div id="quadrado-verde">
         </div>
-        <img src="https://i.ibb.co/P1TWDCC/shutterstock-2173227909-removebg-preview.png" alt="shutterstock-2173227909-removebg-preview" id="veio-qv"/>
+        <img src="https://i.ibb.co/P1TWDCC/shutterstock-2173227909-removebg-preview.png"
+          alt="shutterstock-2173227909-removebg-preview" id="veio-qv" />
       </div>
       <div id="info-quemsomos-main-container">
         <h3 id="title-info-quemsomos-main-container">Quem Somos</h3>
@@ -22,7 +25,7 @@
 
           Juntas, a <strong>Tessenderlo Kerley</strong> e a <strong>Fertio Fertilizantes</strong>
           acreditam que a <strong>inovação</strong> expande as possibilidades para os agricultores,
-           os consumidores e para o agronegócio.
+          os consumidores e para o agronegócio.
         </p>
       </div>
     </div>
@@ -78,6 +81,7 @@ export default {
   mix-blend-mode: normal;
   opacity: 0.8;
 }
+
 #compo-quemsomos-main-container {
   display: flex;
   justify-content: center;
@@ -85,7 +89,7 @@ export default {
   height: 100%;
 }
 
-#quadrado-verde{
+#quadrado-verde {
   position: absolute;
   top: 230px;
   left: 310px;
@@ -96,6 +100,7 @@ export default {
   border-radius: 80px 80px 80px 0;
   transform: rotate(-45deg);
 }
+
 #veio-qv {
   width: 900px;
   height: 600px;
@@ -103,7 +108,7 @@ export default {
   top: 88px;
   left: 10px;
   /* z-index: 10; */
-  clip-path: polygon(0% 0%, 100% 0%, 100% 35%, 55% 100%,15% 41%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 35%, 55% 100%, 15% 41%);
 }
 
 #quadrado-claro {
@@ -114,7 +119,7 @@ export default {
   left: 285px;
 }
 
-#subquadrado-esquerda{
+#subquadrado-esquerda {
   position: absolute;
   top: 250px;
   left: 200px;
@@ -124,5 +129,82 @@ export default {
   position: absolute;
   top: 300px;
   left: 630px;
+}
+
+@media screen and (max-width: 1600px) {
+  #quadrado-verde {
+    top: calc(230px - 15px);
+    left: calc(310px - 10px);
+    width: calc(380px - 70px);
+    height: calc(380px - 70px);
+  }
+
+  #veio-qv {
+    width: calc(900px - 100px);
+    height: calc(600px - 100px);
+    top: 88px;
+    left: 10px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 35%, 56% 100%, 15% 36%);
+  }
+
+  #quadrado-claro {
+    width: calc(450px - 100px);
+    height: calc(450px - 100px);
+    top: 200px;
+    left: 285px;
+  }
+
+  #subquadrado-esquerda {
+    top: 250px;
+    left: 200px;
+  }
+
+  #subquadrado-direita {
+    top: 300px;
+    left: calc(630px - 60px);
+  }
+}
+@media screen and (max-width: 1440px) {
+  #desc-info-quemsomos-main-container {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #desc-info-quemsomos-main-container {
+    width: 85%;
+  }
+
+  #quadrado-verde {
+    top: calc(230px - 30px);
+    left: calc(310px - 85px);
+    width: calc(380px - 140px);
+    height: calc(380px - 140px);
+  }
+
+  #veio-qv {
+    width: calc(900px - 300px);
+    height: calc(600px - 200px);
+    top: 88px;
+    left: 10px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 35%, 56% 100%, 15% 38%);
+  }
+
+  #quadrado-claro {
+    width: calc(450px - 150px);
+    height: calc(450px - 150px);
+    top: calc(200px - 30px);
+    left: calc(285px - 90px);
+  }
+
+  #subquadrado-esquerda {
+    top: 250px;
+    left: calc(200px - 90px);
+  }
+
+  #subquadrado-direita {
+    top: 300px;
+    left: calc(570px - 190px);
+  }
 }
 </style>
