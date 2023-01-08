@@ -400,40 +400,59 @@ export default {
 }
 
 @media screen and (max-width: 1024px) {
-  #desc-info-quemsomos-main-container {
-    width: 85%;
+  #title-info-quemsomos-main-container {
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(45px + 1.2876px);
+    line-height: 60px;
+    color: #092E58;
   }
 
-  #quadrado-verde {
-    top: calc(230px - 30px);
-    left: calc(310px - 85px);
-    width: calc(380px - 140px);
-    height: calc(380px - 140px);
+  #desc-info-quemsomos-main-container {
+    width: 90%;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(22px - 0.4px);
+    line-height: calc(32px - 5.256px);
+    color: #383A47;
+    mix-blend-mode: normal;
+    opacity: 0.8;
   }
 
   #veio-qv {
-    width: calc(900px - 300px);
-    height: calc(600px - 200px);
-    top: 88px;
-    left: 10px;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 35%, 56% 100%, 15% 38%);
+    width: 1013.828px;
+    height: 640px;
+    top: -29.881px;
+    left: -300.631px;
+  }
+
+  #quadrado-verde {
+    width: 362.667px;
+    height: 362.844px;
+    top: 177.862px;
+    left: 77.862px;
   }
 
   #quadrado-claro {
-    width: calc(450px - 150px);
-    height: calc(450px - 150px);
-    top: calc(200px - 30px);
-    left: calc(285px - 90px);
+    width: 426.875px;
+    height: 426.667px;
+    top: 170.750px;
+    left: 49.406px;
   }
 
   #subquadrado-esquerda {
-    top: 250px;
-    left: calc(200px - 90px);
+    width: 213.438px;
+    height: 192px;
+    top: 177.862px;
+    left: 06.719px;
   }
 
   #subquadrado-direita {
-    top: 300px;
-    left: calc(570px - 190px);
+    width: 213.438px;
+    height: 192px;
+    top: 309.484px;
+    left: 396.242px;
   }
 }
 </style>
