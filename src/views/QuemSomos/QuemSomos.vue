@@ -3,6 +3,7 @@
     <Navbar />
     <div id="quemsomos-main-container">
       <div id="compo-quemsomos-main-container">
+        <RedesSociais />
         <img src="https://i.ibb.co/BKWDrFt/Group-removebg-preview.png" alt="Group-removebg-preview"
           id="subquadrado-esquerda" />
         <img src="https://i.ibb.co/BKWDrFt/Group-removebg-preview.png" alt="Group-removebg-preview"
@@ -34,15 +35,21 @@
 
 <script>
 import Navbar from '../../components/NavbarComponent.vue';
+import RedesSociais from '../../components/RedeSocialComponent.vue';
 
 export default {
-  components: { Navbar },
+  components: { Navbar, RedesSociais },
 };
 </script>
 
 <style>
 #quem-somos {
   overflow: hidden;
+}
+
+#redes-sociais {
+  position: absolute;
+  z-index: 10;
 }
 
 #quemsomos-main-container {
@@ -136,6 +143,16 @@ export default {
 }
 
 @media screen and (max-width: 2560px) {
+  #redes-sociais {
+    bottom: 200px;
+    left: 900px;
+    display: flex;;
+    gap: 28px;
+  }
+  #ig,#fb,#tg {
+    width: 56px;
+    height: 56px;
+  }
   #title-info-quemsomos-main-container {
     font-style: normal;
     font-weight: 700;
@@ -191,8 +208,17 @@ export default {
     left: calc(630px + 300px);
   }
 }
-
 @media screen and (max-width: 1920px) {
+  #redes-sociais {
+    bottom: 150px;
+    left: 675px;
+    display: flex;
+    gap: 18px;
+  }
+  #ig,#fb,#tg {
+    width: 42px;
+    height: 42px;
+  }
   #title-info-quemsomos-main-container {
     font-style: normal;
     font-weight: 700;
@@ -248,8 +274,17 @@ export default {
     left: calc(630px + 67.5px);
   }
 }
-
 @media screen and (max-width: 1600px) {
+  #redes-sociais {
+    bottom: 125px;
+    left: 562.5px;
+    display: flex;
+    gap: 15px;
+  }
+  #ig,#fb,#tg {
+    width: 35px;
+    height: 35px;
+  }
   #title-info-quemsomos-main-container {
     font-style: normal;
     font-weight: 700;
@@ -306,6 +341,16 @@ export default {
   }
 }
 @media screen and (max-width: 1366px) {
+  #redes-sociais {
+    bottom: 106.719px;
+    left: 480.234px;
+    display: flex;
+    gap: 12.8px;
+  }
+  #ig,#fb,#tg {
+    width: 29.881px;
+    height: 29.867px;
+  }
   #title-info-quemsomos-main-container {
     font-style: normal;
     font-weight: 700;
@@ -361,7 +406,11 @@ export default {
     left: 496.242px;
   }
 }
-
+@media screen and (max-height: 987px) {
+  #redes-sociais {
+    bottom: 80px;
+  }
+}
 @media screen and (max-height: 768px) {
   #veio-qv {
     width: 1013.828px;
@@ -400,6 +449,16 @@ export default {
 }
 
 @media screen and (max-width: 1024px) {
+  #redes-sociais {
+    bottom: 106.719px;
+    left: 360px;
+    display: flex;
+    gap: 12.8px;
+  }
+  #ig,#fb,#tg {
+    width: 29.881px;
+    height: 29.867px;
+  }
   #title-info-quemsomos-main-container {
     font-style: normal;
     font-weight: 700;
