@@ -249,7 +249,7 @@ export default {
   }
 }
 
-@media screen and (max-width: 1660px) {
+@media screen and (max-width: 1600px) {
   #title-info-quemsomos-main-container {
     font-style: normal;
     font-weight: 700;
@@ -305,44 +305,97 @@ export default {
     left: calc(630px - 48.75px);
   }
 }
-
-@media screen and (max-width: 1440px) {
-  #desc-info-quemsomos-main-container {
-    width: 75%;
+@media screen and (max-width: 1366px) {
+  #title-info-quemsomos-main-container {
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(45px + 1.2876px);
+    line-height: 60px;
+    color: #092E58;
   }
-}
 
-@media screen and (max-width: 1280px) {
-  #quadrado-verde {
-    top: calc(230px - 50px);
-    left: calc(310px - 125px);
-    width: calc(380px - 40px);
-    height: calc(380px - 40px);
+  #desc-info-quemsomos-main-container {
+    width: 90%;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(22px - 0.4px);
+    line-height: calc(32px - 5.256px);
+    color: #383A47;
+    mix-blend-mode: normal;
+    opacity: 0.8;
   }
 
   #veio-qv {
-    width: calc(900px - 100px);
-    height: calc(600px - 50px);
-    top: calc(90px - 50px);
-    left: calc(10px - 100px);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 35%, 56% 100%, 15% 40%);
+    width: 1013.828px;
+    height: 640px;
+    top: -29.881px;
+    left: -200.631px;
+  }
+
+  #quadrado-verde {
+    width: 362.667px;
+    height: 362.844px;
+    top: 177.862px;
+    left: 177.862px;
   }
 
   #quadrado-claro {
-    width: calc(450px - 50px);
-    height: calc(450px - 50px);
-    top: calc(200px - 30px);
-    left: calc(285px - 130px);
+    width: 426.875px;
+    height: 426.667px;
+    top: 170.750px;
+    left: 149.406px;
   }
 
   #subquadrado-esquerda {
-    top: calc(250px - 50px);
-    left: calc(200px - 90px);
+    width: 213.438px;
+    height: 192px;
+    top: 177.862px;
+    left: 106.719px;
   }
 
   #subquadrado-direita {
-    top: calc(300px - 50px);
-    left: calc(570px - 130px);
+    width: 213.438px;
+    height: 192px;
+    top: 309.484px;
+    left: 496.242px;
+  }
+}
+
+@media screen and (max-height: 768px) {
+  #veio-qv {
+    width: 1013.828px;
+    height: 640px;
+    top: -29.881px;
+    left: -200.631px;
+  }
+
+  #quadrado-verde {
+    width: 362.667px;
+    height: 362.844px;
+    top: 177.862px;
+    left: 177.862px;
+  }
+
+  #quadrado-claro {
+    width: 426.875px;
+    height: 426.667px;
+    top: 170.750px;
+    left: 149.406px;
+  }
+
+  #subquadrado-esquerda {
+    width: 213.438px;
+    height: 192px;
+    top: 177.862px;
+    left: 106.719px;
+  }
+
+  #subquadrado-direita {
+    width: 213.438px;
+    height: 192px;
+    top: 309.484px;
+    left: 496.242px;
   }
 }
 
