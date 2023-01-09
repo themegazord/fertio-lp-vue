@@ -436,7 +436,6 @@ export default {
     height: 56.25px;
   }
 }
-
 @media screen and (max-width: 1440px) {
   #fazendeiro {
     width: 703.125px;
@@ -462,7 +461,6 @@ export default {
     height: 537.5px;
   }
 }
-
 @media screen and (max-width: 1366px) {
   #fazendeiro {
     width: 666.992px;
@@ -561,6 +559,106 @@ export default {
   #avaliacao {
     width: 106.719px;
     height: 48px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  #fazendeiro {
+    width: 625px;
+    height: 666,667px;
+    position: absolute;
+    bottom: 0;
+    right: 97.222px;
+  }
+
+  #circulo-verde {
+    position: absolute;
+    bottom: 0;
+    right: 152.778px;
+    width: 500px;
+    height: 450px;
+  }
+
+  #aro-aberto {
+    position: absolute;
+    bottom: 0;
+    right: 127.778px;
+    width: 500px;
+    height: 477.778px;
+  }
+
+  #left-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    gap: 120px;
+  }
+
+  .left-main-container {
+    width: 497.804px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #title-left-main-container {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 47.778px;
+    line-height: 55.555px;
+    color: #092E58;
+  }
+
+  #desc-left-main-container {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21.112px;
+    line-height: 26.573px;
+    color: #383A47;
+  }
+
+  #btn-left-main-container {
+    width: 194.445px;
+    height: 40px;
+    font-size: 12.222px;
+    background-color: #CFFD00;
+    border-radius: 10px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #btn-left-main-container img {
+    width: 13.333px;
+    height: 13.333px;
+  }
+
+  #linha-vertical {
+    width: 28.889px;
+    transform: rotate(90deg);
+    border: 1px solid;
+  }
+
+  .bottom-left-main-container {
+    display: flex;
+    width: 370px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #info-11anos {
+    width: 222.222px;
+    height: 55.555px;
+  }
+
+  #avaliacao {
+    width: 100px;
+    height: 50px;
   }
 }
 
