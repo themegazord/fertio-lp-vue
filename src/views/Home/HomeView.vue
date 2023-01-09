@@ -336,6 +336,106 @@ export default {
     height: 67.5px;
   }
 }
+@media screen and (max-width: 1600px) {
+  #fazendeiro {
+    width: 703.125px;
+    height: 750px;
+    position: absolute;
+    bottom: 0;
+    right: 109.375px;
+  }
+
+  #circulo-verde {
+    position: absolute;
+    bottom: 0;
+    right: 171.875px;
+    width: 562.5px;
+    height: 506.25px;
+  }
+
+  #aro-aberto {
+    position: absolute;
+    bottom: 0;
+    right: 143.75px;
+    width: 562.5px;
+    height: 537.5px;
+  }
+
+  #left-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    gap: 120px;
+  }
+
+  .left-main-container {
+    width: 531.25px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #title-left-main-container {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 53.75px;
+    line-height: 62.5px;
+    color: #092E58;
+  }
+
+  #desc-left-main-container {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23.75px;
+    line-height: 30px;
+    color: #383A47;
+  }
+
+  #btn-left-main-container {
+    width: 218.75px;
+    height: 45px;
+    font-size: 13.75px;
+    background-color: #CFFD00;
+    border-radius: 10px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #btn-left-main-container img {
+    width: 15px;
+    height: 15px;
+  }
+
+  #linha-vertical {
+    width: 32.5px;
+    transform: rotate(90deg);
+    border: 1px solid;
+  }
+
+  .bottom-left-main-container {
+    display: flex;
+    width: 416.25px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #info-11anos {
+    width: 250px;
+    height: 62.5px;
+  }
+
+  #avaliacao {
+    width: 112.5px;
+    height: 56.25px;
+  }
+}
 
 /* @media screen and (max-width: 1440px) {
   #circulo-verde,
