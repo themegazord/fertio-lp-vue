@@ -437,6 +437,32 @@ export default {
   }
 }
 
+@media screen and (max-width: 1440px) {
+  #fazendeiro {
+    width: 703.125px;
+    height: 750px;
+    position: absolute;
+    bottom: 0;
+    right: 91.146px;
+  }
+
+  #circulo-verde {
+    position: absolute;
+    bottom: 0;
+    right: 143.229px;
+    width: 562.5px;
+    height: 506.25px;
+  }
+
+  #aro-aberto {
+    position: absolute;
+    bottom: 0;
+    right: 119.792px;
+    width: 562.5px;
+    height: 537.5px;
+  }
+}
+
 /* @media screen and (max-width: 1440px) {
   #circulo-verde,
   #aro-aberto {
