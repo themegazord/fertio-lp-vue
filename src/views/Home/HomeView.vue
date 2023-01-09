@@ -663,8 +663,108 @@ export default {
 }
 @media screen and (max-height: 750px) {
   #fazendeiro {
+    width: 600px;
     height: 580px
   }
 }
+@media screen and (max-width: 1280px) {
+  #fazendeiro {
+    width: 500px;
+    height: 640px;
+    position: absolute;
+    bottom: 0;
+    right: 77.778px;
+  }
 
+  #circulo-verde {
+    position: absolute;
+    bottom: 0;
+    right: 122.222px;
+    width: 400px;
+    height: 432px;
+  }
+
+  #aro-aberto {
+    position: absolute;
+    bottom: 0;
+    right: 102.222px;
+    width: 400px;
+    height: 458.667px;
+  }
+
+  #left-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    gap: 120px;
+  }
+
+  .left-main-container {
+    width: 398.243px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #title-left-main-container {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38.222px;
+    line-height: 44.444px;
+    color: #092E58;
+  }
+
+  #desc-left-main-container {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.890px;
+    line-height: 21.258px;
+    color: #383A47;
+  }
+
+  #btn-left-main-container {
+    width: 165.556px;
+    height: 38.4px;
+    font-size: 9.778px;
+    background-color: #CFFD00;
+    border-radius: 10px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #btn-left-main-container img {
+    width: 10.666px;
+    height: 10.666px;
+  }
+
+  #linha-vertical {
+    width: 23.111px;
+    transform: rotate(90deg);
+    border: 1px solid;
+  }
+
+  .bottom-left-main-container {
+    display: flex;
+    width: 296px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #info-11anos {
+    width: 177.778px;
+    height: 53.333px;
+  }
+
+  #avaliacao {
+    width: 80px;
+    height: 48px;
+  }
+}
 </style>
