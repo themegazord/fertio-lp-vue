@@ -227,7 +227,7 @@ export default {
     font-weight: 400;
   }
 }
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1280px) {
   .card-depoimentos{
     display: grid;
     grid-template-columns: 25% 75%;
@@ -263,6 +263,48 @@ export default {
   #desc-dir-card-depoimentos {
     font-size: 11.9px;
     line-height: 17.875px;
+    color: #383A47;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .card-depoimentos{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    width: 217.778px;
+    height: 60.8px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 84px 110px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5.98022px);
+    border-radius: 8.88889px;
+  }
+  #esq-card-depoimentos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #imagem-esq-card-depoimentos {
+    width: 32.444px;
+    height: 42.667px;
+    border-radius: 100px;
+  }
+  #dir-card-depoimentos {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  #titulo-dir-card-depoimentos {
+    font-size: 9.520px;
+    line-height: 14.3px;
+    color: #1B1C20;
+    font-weight: 700;
+  }
+  #desc-dir-card-depoimentos {
+    font-size: 9.520px;
+    line-height: 14.3px;
     color: #383A47;
     mix-blend-mode: normal;
     opacity: 0.7;
