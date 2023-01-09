@@ -564,7 +564,7 @@ export default {
 @media screen and (max-width: 1280px) {
   #fazendeiro {
     width: 625px;
-    height: 666,667px;
+    height: 666.667px;
     position: absolute;
     bottom: 0;
     right: 97.222px;
@@ -659,6 +659,11 @@ export default {
   #avaliacao {
     width: 100px;
     height: 50px;
+  }
+}
+@media screen and (max-height: 750px) {
+  #fazendeiro {
+    height: 580px
   }
 }
 
