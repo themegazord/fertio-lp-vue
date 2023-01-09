@@ -15,26 +15,48 @@
         </div>
         <div class="bottom-left-main-container">
           <img src="../../assets/11-anos.png"
-          alt="Informações de 11 anos da empresa" id="info-11anos">
+           alt="Informações de 11 anos da empresa"
+           id="info-11anos">
           <hr id="linha-vertical">
-          <img src="../../assets/avaliacao.png"
-          alt="Avaliação da empresa de 4,8 de 5 estrelas" id="avaliacao">
+          <img
+          src="../../assets/avaliacao.png"
+          alt="Avaliação da empresa de 4,8 de 5 estrelas"
+          id="avaliacao">
         </div>
       </div>
       <img src="https://i.ibb.co/LzZ3PKf/circulo-verde.png" alt="circulo-verde" id="circulo-verde">
       <img src="https://i.ibb.co/XjGDmDB/aro-aberto.png" alt="aro-aberto" id="aro-aberto">
       <img src="https://i.ibb.co/cDynFQ6/fazendeiro-removebg-preview-1.png" alt="fazendeiro-removebg-preview-1"
         id="fazendeiro">
+      <Depoimentos
+      id="depoimento-fazenda-inova"
+      titulo="Fazenda Inova"
+      descricao="A parceria com a Fertio elevou a qualidade e a produtividade de nossas culturas!">
+        <img src="../../assets/fazenda_inova.png"
+        alt="Fazenda Inova"
+        id="imagem-esq-card-depoimentos" />
+      </Depoimentos>
+      <Depoimentos
+      id="depoimento-cassio-souza"
+      titulo="Cássio de Souza"
+      descricao="Satisfeito! Colhendo ótimos resultados graças a Fertio.">
+        <img
+        src="../../assets/cassio-souza.png"
+        alt="Foto do Cassio de Souza"
+        id="imagem-esq-card-depoimentos">
+      </Depoimentos>
     </div>
   </div>
 </template>
 
 <script>
 import Navbar from '../../components/NavbarComponent.vue';
+import Depoimentos from '../../components/CardDepoimentoComponent.vue';
 
 export default {
   components: {
     Navbar,
+    Depoimentos,
   },
 };
 </script>
@@ -136,7 +158,25 @@ export default {
   align-items: center;
 }
 
+#depoimento-fazenda-inova {
+  position: absolute;
+}
+
+#depoimento-cassio-souza {
+  position: absolute;
+}
+
 @media screen and (max-width: 2560px) {
+  #depoimento-fazenda-inova {
+    bottom: 400px;
+    right: 150px;
+  }
+
+  #depoimento-cassio-souza {
+    bottom: 200px;
+    right: 825px;
+  }
+
   #fazendeiro {
     width: 1125px;
     height: 1200px;
@@ -236,6 +276,7 @@ export default {
     height: 90px;
   }
 }
+
 @media screen and (max-width: 1920px) {
   #fazendeiro {
     width: 843.75px;
@@ -336,6 +377,7 @@ export default {
     height: 67.5px;
   }
 }
+
 @media screen and (max-width: 1600px) {
   #fazendeiro {
     width: 703.125px;
@@ -436,6 +478,7 @@ export default {
     height: 56.25px;
   }
 }
+
 @media screen and (max-width: 1440px) {
   #fazendeiro {
     width: 703.125px;
@@ -461,6 +504,7 @@ export default {
     height: 537.5px;
   }
 }
+
 @media screen and (max-width: 1366px) {
   #fazendeiro {
     width: 666.992px;
@@ -561,6 +605,7 @@ export default {
     height: 48px;
   }
 }
+
 @media screen and (max-width: 1280px) {
   #fazendeiro {
     width: 625px;
@@ -661,17 +706,20 @@ export default {
     height: 50px;
   }
 }
+
 @media screen and (max-height: 750px) {
   #fazendeiro {
     width: 600px;
     height: 580px
   }
 }
+
 @media screen and (max-height: 950px) {
   #fazendeiro {
     height: 800px;
   }
 }
+
 @media screen and (max-width: 1024px) {
   #fazendeiro {
     width: 500px;
