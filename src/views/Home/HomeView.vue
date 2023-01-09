@@ -463,70 +463,105 @@ export default {
   }
 }
 
-/* @media screen and (max-width: 1440px) {
-  #circulo-verde,
-  #aro-aberto {
-    right: 200px;
-  }
-
-  #fazendeiro {
-    right: 100px;
-  }
-}
-
 @media screen and (max-width: 1366px) {
-  #circulo-verde,
-  #aro-aberto {
-    right: 150px;
-  }
-
   #fazendeiro {
-    right: 50px;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  #circulo-verde,
-  #aro-aberto {
-    right: 100px;
+    width: 666.992px;
+    height: 640px;
+    position: absolute;
+    bottom: 0;
+    right: 103.754px;
   }
 
-  #fazendeiro {
-    right: 0;
-  }
-}
-
-@media screen and (max-height: 830px) {
   #circulo-verde {
-    width: calc(550px - 75px);
-    height: calc(500px - 75px);
+    position: absolute;
+    bottom: 0;
+    right: 163.043px;
+    width: 533.594px;
+    height: 432px;
   }
 
   #aro-aberto {
-    width: calc(515px - 75px);
-    height: calc(530px - 75px);
+    position: absolute;
+    bottom: 0;
+    right: 136.363px;
+    width: 533.594px;
+    height: 458.667px;
   }
 
-  #fazendeiro {
-    width: calc(675px - 100px);
-    height: calc(750px - 100px);
+  #left-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    gap: 120px;
+  }
+
+  .left-main-container {
+    width: 531.25px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #title-left-main-container {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50.988px;
+    line-height: 59.288px;
+    color: #092E58;
+  }
+
+  #desc-left-main-container {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22.53px;
+    line-height: 28.458px;
+    color: #383A47;
+  }
+
+  #btn-left-main-container {
+    width: 207.509px;
+    height: 38.4px;
+    font-size: 13.043px;
+    background-color: #CFFD00;
+    border-radius: 10px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #btn-left-main-container img {
+    width: 14.229px;
+    height: 14.229px;
+  }
+
+  #linha-vertical {
+    width: 30.830px;
+    transform: rotate(90deg);
+    border: 1px solid;
+  }
+
+  .bottom-left-main-container {
+    display: flex;
+    width: 394.859px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #info-11anos {
+    width: 237.153px;
+    height: 53.333px;
+  }
+
+  #avaliacao {
+    width: 106.719px;
+    height: 48px;
   }
 }
 
-@media screen and (max-height: 768px) {
-  #circulo-verde {
-    width: calc(550px - 100px);
-    height: calc(500px - 100px);
-  }
-
-  #aro-aberto {
-    width: calc(515px - 100px);
-    height: calc(530px - 100px);
-  }
-
-  #fazendeiro {
-    width: calc(675px - 150px);
-    height: calc(750px - 150px);
-  }
-} */
 </style>
