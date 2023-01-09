@@ -8,7 +8,7 @@
           <p id="desc-left-main-container">
             Aumente a sua produtividade e se torne um produtor de sucesso!
           </p>
-          <button id="btn-left-main-container">
+          <button id="btn-left-main-container" @click="vaiProFormulario">
             Falar com o especialista
             <img src="../../assets/setinha-direita.svg" alt="Seta para direita">
           </button>
@@ -57,6 +57,11 @@ export default {
   components: {
     Navbar,
     Depoimentos,
+  },
+  methods: {
+    vaiProFormulario() {
+      this.$router.push({ path: '/formulario' });
+    },
   },
 };
 </script>
