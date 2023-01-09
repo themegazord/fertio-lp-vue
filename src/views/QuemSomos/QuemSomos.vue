@@ -50,10 +50,6 @@ export default {
 #redes-sociais {
   position: absolute;
   z-index: 10;
-  color: #092E58;
-}
-.ig:visited {
-  color: #092E58;
 }
 
 #quemsomos-main-container {

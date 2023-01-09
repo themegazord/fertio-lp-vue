@@ -1,18 +1,15 @@
 <template>
-  <div>
-    <!-- <img src="../assets/facebook.svg" alt="Icone do facebook" id="fb" />
-    <a href="https://instagram.com/fertiofertilizantes" target="_blank" rel="noopener noreferrer">
-    <img src="../assets/instagram.svg" alt="Icone do Instagram" id= "ig">
-    </a>
-    <img src="../assets/routesquare.svg" alt="Icone do Telegram" id="tg"> -->
-    <h1><font-awesome-icon icon="fa-brands fa-square-facebook" id="fb"/></h1>
+  <div
+    :class="{'quem-somos': this.$route.name === 'quem-somos',
+     'formulario': this.$route.name === 'formulario'}">
+    <a><font-awesome-icon icon="fa-brands fa-square-facebook" id="fb"/></a>
     <a href="https://instagram.com/fertiofertilizantes"
       target="_blank"
       rel="noopener noreferrer"
       class="ig">
       <font-awesome-icon icon="fa-brands fa-square-instagram" id= "ig"/>
     </a>
-    <h1><font-awesome-icon icon="fa-brands fa-telegram" id="tg"/></h1>
+    <a><font-awesome-icon icon="fa-brands fa-telegram" id="tg"/></a>
   </div>
 </template>
 
@@ -23,9 +20,13 @@ export default {
 </script>
 
 <style>
-  #fb,
-  #ig,
-  #tg {
-    text-decoration: none;
-  }
+.quem-somos > a {
+  text-decoration: none;
+  color: #092E58;
+}
+
+.formulario > a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
 </style>
