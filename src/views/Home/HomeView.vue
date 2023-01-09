@@ -284,7 +284,7 @@ export default {
   }
 
   #depoimento-cassio-souza {
-    bottom: 200px;
+    bottom: 150px;
     right: 618.75px;
   }
   #fazendeiro {
