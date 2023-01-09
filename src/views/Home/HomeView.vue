@@ -533,6 +533,15 @@ export default {
 }
 
 @media screen and (max-width: 1366px) {
+  #depoimento-fazenda-inova {
+    bottom: 237.153px;
+    right: 80.039px;
+  }
+
+  #depoimento-cassio-souza {
+    bottom: 118.576px;
+    right: 440.215px;
+  }
   #fazendeiro {
     width: 666.992px;
     height: 640px;
@@ -734,19 +743,6 @@ export default {
   }
 }
 
-@media screen and (max-height: 750px) {
-  #fazendeiro {
-    width: 600px;
-    height: 580px
-  }
-}
-
-@media screen and (max-height: 950px) {
-  #fazendeiro {
-    height: 800px;
-  }
-}
-
 @media screen and (max-width: 1024px) {
   #fazendeiro {
     width: 500px;
@@ -845,6 +841,18 @@ export default {
   #avaliacao {
     width: 80px;
     height: 48px;
+  }
+}
+
+@media screen and (max-height: 950px) {
+  #fazendeiro {
+    height: 800px;
+  }
+}
+@media screen and (max-height: 780px) {
+  #fazendeiro {
+    width: 600px;
+    height: 580px
   }
 }
 </style>
