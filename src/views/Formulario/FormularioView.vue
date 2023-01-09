@@ -590,4 +590,38 @@ export default {
     margin-top: 40.235px;
   }
 }
+@media screen and (max-height: 900px) {
+  #info-contato-formulario-main-container {
+    margin-top: 74.002px;
+  }
+
+  #endereco-info-contato {
+    margin-top: 29.682px;
+  }
+
+  #titulo-form-contato {
+    margin-bottom: 24.787px;
+  }
+
+  #form-form-contato {
+    margin-top: 47.803px;
+  }
+}
+@media screen and (max-height: 860px) {
+  #info-contato-formulario-main-container {
+    margin-top: 70.713px;
+  }
+
+  #endereco-info-contato {
+    margin-top: 28.363px;
+  }
+
+  #titulo-form-contato {
+    margin-bottom: 23.685px;
+  }
+
+  #form-form-contato {
+    margin-top: 45.678px;
+  }
+}
 </style>
