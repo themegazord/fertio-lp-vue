@@ -667,12 +667,12 @@ export default {
     height: 580px
   }
 }
-@media screen and (max-height: 900px) {
+@media screen and (max-height: 950px) {
   #fazendeiro {
     height: 800px;
   }
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
   #fazendeiro {
     width: 500px;
     height: 640px;
