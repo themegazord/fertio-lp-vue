@@ -3,7 +3,7 @@
     <Navbar />
     <div id="quemsomos-main-container">
       <div id="compo-quemsomos-main-container">
-        <RedesSociais />
+        <RedesSociais id="redes-sociais"/>
         <img src="https://i.ibb.co/BKWDrFt/Group-removebg-preview.png" alt="Group-removebg-preview"
           id="subquadrado-esquerda" />
         <img src="https://i.ibb.co/BKWDrFt/Group-removebg-preview.png" alt="Group-removebg-preview"
@@ -50,6 +50,10 @@ export default {
 #redes-sociais {
   position: absolute;
   z-index: 10;
+  color: #092E58;
+}
+.ig:visited {
+  color: #092E58;
 }
 
 #quemsomos-main-container {

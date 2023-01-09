@@ -16,7 +16,7 @@
         <router-link class="link-navbar" to="/parceiros">Parceiros</router-link>
         <router-link class="link-navbar" to="/contatos">Contatos</router-link>
       </div>
-      <button id="button-navbar">Fale com o especialista</button>
+      <button id="button-navbar" @click="vaiProFormulario">Fale com o especialista</button>
     </div>
   </nav>
 </template>
@@ -24,6 +24,11 @@
 <script>
 export default {
   data: () => ({}),
+  methods: {
+    vaiProFormulario() {
+      this.$router.push({ path: '/formulario' });
+    },
+  },
 };
 </script>
 
