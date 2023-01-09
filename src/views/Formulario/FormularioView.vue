@@ -48,7 +48,7 @@
               placeholder="Telefone" solo></v-text-field>
           </div>
           <v-text-field class="assunto" label="Assunto" placeholder="Assunto" solo></v-text-field>
-          <v-textarea rows="10" label="Mensagem" solo></v-textarea>
+          <v-textarea rows="7" label="Mensagem" solo></v-textarea>
           <div id="div-button">
             <button type="submit" id="submit-enviar">Enviar</button>
           </div>
@@ -402,6 +402,170 @@ export default {
     border-radius: 20px 0px;
     font-size: 36px;
     line-height: 26.4px;
+    color: #FFFFFF;
+    font-family: 'Mulish';
+  }
+}
+@media screen and (max-width: 1600px) {
+  #info-contato-formulario-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-top: 91px;
+  }
+
+  #formulario-main-container {
+    background-color: #092E58;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #form-contato {
+    background-color: #FFFFFF;
+    border-radius: 58px 0 0 58px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #titulo-info-contato {
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.040em;
+    color: #FFFFFF;
+    margin-left: 31.25px;
+  }
+
+  #meio-info-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    gap: 35px;
+  }
+
+  #email-info-contato,
+  #endereco-info-contato,
+  #telefones-info-contato {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #endereco-info-contato {
+    margin-top: 57px;
+  }
+
+  #titulo-endereco-info-container,
+  #titulo-email-info-container,
+  #titulo-telefones-info-contato {
+    font-size: 23px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    margin-bottom: 15px;
+  }
+
+  #logradouro-endereco-info-container,
+  #email-email-info-container,
+  .telefones {
+    font-size: 23px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+
+  .pe {
+    padding-top: 37.5px;
+  }
+
+  #redes-sociais-form {
+    position: absolute;
+    bottom: 43px;
+    left: 128px;
+    display: flex;
+    gap: 17.5px;
+  }
+
+  #titulo-form-contato {
+    font-size: 40px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #019A34;
+    margin-bottom: 28px;
+  }
+
+  #sub-titulo-form-contato {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #383A47;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    width: 750px;
+  }
+
+  #form-contato-content {
+    width: 80%
+  }
+
+  #form-form-contato {
+    width: 100%;
+    margin-top: 54px;
+  }
+
+  #email-telefone-form-contato {
+    display: flex;
+    gap: 31.25px;
+  }
+
+  .email .v-input__slot,
+  .nome-completo .v-input__slot,
+  .telefone .v-input__slot,
+  .assunto .v-input__slot {
+    height: 57px;
+    font-size: 20px;
+  }
+
+  .v-input__slot {
+    background: #F5F5F5;
+    border: 1px solid #E1E1E1;
+  }
+
+  .v-label {
+    font-family: 'Mulish';
+    font-size: 17.5px;
+    line-height: 18px;
+  }
+
+  #div-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+  }
+
+  #submit-enviar {
+    width: 175px;
+    height: 65px;
+    background: #019A34;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px 0px;
+    font-size: 30px;
+    line-height: 22px;
     color: #FFFFFF;
     font-family: 'Mulish';
   }
