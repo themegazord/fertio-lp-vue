@@ -498,6 +498,15 @@ export default {
 }
 
 @media screen and (max-width: 1440px) {
+  #depoimento-fazenda-inova {
+    bottom: 250px;
+    right: 84.375px;
+  }
+
+  #depoimento-cassio-souza {
+    bottom: 125px;
+    right: 464.063px;
+  }
   #fazendeiro {
     width: 703.125px;
     height: 750px;
