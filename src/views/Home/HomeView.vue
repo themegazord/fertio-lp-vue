@@ -14,14 +14,17 @@
           </button>
         </div>
         <div class="bottom-left-main-container">
-          <img src="../../assets/11-anos.png" alt="Informações de 11 anos da empresa">
+          <img src="../../assets/11-anos.png"
+          alt="Informações de 11 anos da empresa" id="info-11anos">
           <hr id="linha-vertical">
-          <img src="../../assets/avaliacao.png" alt="Avaliação da empresa de 4,8 de 5 estrelas">
+          <img src="../../assets/avaliacao.png"
+          alt="Avaliação da empresa de 4,8 de 5 estrelas" id="avaliacao">
         </div>
       </div>
       <img src="https://i.ibb.co/LzZ3PKf/circulo-verde.png" alt="circulo-verde" id="circulo-verde">
       <img src="https://i.ibb.co/XjGDmDB/aro-aberto.png" alt="aro-aberto" id="aro-aberto">
-      <img src="https://i.ibb.co/cDynFQ6/fazendeiro-removebg-preview-1.png" alt="fazendeiro-removebg-preview-1" id="fazendeiro">
+      <img src="https://i.ibb.co/cDynFQ6/fazendeiro-removebg-preview-1.png" alt="fazendeiro-removebg-preview-1"
+        id="fazendeiro">
     </div>
   </div>
 </template>
@@ -74,7 +77,7 @@ export default {
   right: 275px;
 }
 
-#left-main-container{
+#left-main-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,7 +88,7 @@ export default {
   gap: 120px;
 }
 
-.left-main-container{
+.left-main-container {
   width: 500px;
   gap: 30px;
   display: flex;
@@ -133,7 +136,108 @@ export default {
   align-items: center;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 2560px) {
+  #fazendeiro {
+    width: 1125px;
+    height: 1200px;
+    position: absolute;
+    bottom: 0;
+    right: 175px;
+  }
+
+  #circulo-verde {
+    position: absolute;
+    bottom: 0;
+    right: 275px;
+    width: 900px;
+    height: 810px;
+  }
+
+  #aro-aberto {
+    position: absolute;
+    bottom: 0;
+    right: 230px;
+    width: 900px;
+    height: 860px;
+  }
+
+  #left-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    gap: 120px;
+  }
+
+  .left-main-container {
+    width: 850px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #title-left-main-container {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 86px;
+    line-height: 103.2px;
+    color: #092E58;
+  }
+
+  #desc-left-main-container {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 48px;
+    color: #383A47;
+  }
+
+  #btn-left-main-container {
+    width: 350px;
+    height: 72px;
+    font-size: 22px;
+    background-color: #CFFD00;
+    border-radius: 10px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #btn-left-main-container img {
+    width: 24px;
+    height: 24px;
+  }
+
+  #linha-vertical {
+    width: 52px;
+    transform: rotate(90deg);
+    border: 1px solid;
+  }
+
+  .bottom-left-main-container {
+    display: flex;
+    width: 666px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #info-11anos {
+    width: 400px;
+    height: 100px;
+  }
+
+  #avaliacao {
+    width: 180px;
+    height: 90px;
+  }
+}
+
+/* @media screen and (max-width: 1440px) {
   #circulo-verde,
   #aro-aberto {
     right: 200px;
@@ -198,5 +302,5 @@ export default {
     width: calc(675px - 150px);
     height: calc(750px - 150px);
   }
-}
+} */
 </style>
