@@ -40,27 +40,45 @@
             class="nome-completo"
             label="Nome Completo"
             placeholder="Nome Completo"
+            :error-messages="nomeErros"
+            :error="!!nomeErros.length"
+            :style="{ color: !!nomeErros.length ? 'red' : 'initial' }"
             solo></v-text-field>
           <div id="email-telefone-form-contato">
             <v-text-field
               v-model="email"
               class="email"
               label="E-mail"
+              :error-messages="emailErros"
+              :error="!!emailErros.length"
+              :style="{ color: !!emailErros.length ? 'red' : 'initial' }"
               placeholder="E-mail" solo>
             </v-text-field>
             <v-text-field
               v-model="telefone"
               class="telefone"
               label="Telefone"
+              :error-messages="telefoneErros"
+              :error="!!telefoneErros.length"
+              :style="{ color: !!telefoneErros.length ? 'red' : 'initial' }"
               placeholder="Telefone" solo></v-text-field>
           </div>
           <v-text-field
             v-model="assunto"
             class="assunto"
             label="Assunto"
+            :error-messages="assuntoErros"
+            :error="!!assuntoErros.length"
+            :style="{ color: !!assuntoErros.length ? 'red' : 'initial' }"
             placeholder="Assunto" solo>
           </v-text-field>
-          <v-textarea v-model="mensagem" rows="7" label="Mensagem" solo></v-textarea>
+          <v-textarea
+            v-model="mensagem"
+            rows="7"
+            :error-messages="mensagemErros"
+            :error="!!mensagemErros.length"
+            :style="{ color: !!mensagemErros.length ? 'red' : 'initial' }"
+            label="Mensagem" solo></v-textarea>
           <div id="div-button">
             <button type="submit" id="submit-enviar">Enviar</button>
           </div>
@@ -71,6 +89,8 @@
 </template>
 
 <script>
+import { validationMixin } from 'vuelidate';
+import { required, email } from 'vuelidate/lib/validators';
 import RedeSocial from '../../components/RedeSocialComponent.vue';
 
 export default {
@@ -85,11 +105,67 @@ export default {
   }),
   methods: {
     submit() {
-      const fullMessage = encodeURI(`Olá 😊.$Meu nome é *${this.nome
-      }* e fiquei interessado no seu produto.$✉️ = *${this.email}*.$📱 = *${
-        this.telefone}*.$🤔 = *${this.assunto}*.$💬 = *${this.mensagem}*`);
+      this.$v.$touch();
 
-      window.open(`https://api.whatsapp.com/send?phone=5541996267118&text=${fullMessage.replaceAll('$', '%0D')}`);
+      if (!this.$v.$invalid) {
+        const fullMessage = encodeURI(`Olá 😊.$Meu nome é *${this.nome
+        }* e fiquei interessado no seu produto.$✉️ = *${this.email}*.$📱 = *${
+          this.telefone}*.$🤔 = *${this.assunto}*.$💬 = *${this.mensagem}*`);
+
+        window.open(`https://api.whatsapp.com/send?phone=5541996267118&text=${fullMessage.replaceAll('$', '%0D')}`);
+      }
+    },
+  },
+  mixins: [validationMixin],
+  validations: {
+    nome: {
+      required,
+    },
+    email: {
+      required,
+      email,
+    },
+    telefone: {
+      required,
+    },
+    assunto: {
+      required,
+    },
+    mensagem: {
+      required,
+    },
+  },
+  computed: {
+    nomeErros() {
+      const erros = [];
+      if (!this.$v.nome.$dirty) return erros;
+      if (!this.$v.nome.required) erros.push('Por favor, insira seu nome');
+      return erros;
+    },
+    emailErros() {
+      const erros = [];
+      if (!this.$v.email.$dirty) return erros;
+      if (!this.$v.email.email) erros.push('E-mail inválido');
+      if (!this.$v.email.required) erros.push('Por favor, insira seu email');
+      return erros;
+    },
+    telefoneErros() {
+      const erros = [];
+      if (!this.$v.telefone.$dirty) return erros;
+      if (!this.$v.telefone.required) erros.push('Por favor, insira seu telefone');
+      return erros;
+    },
+    assuntoErros() {
+      const erros = [];
+      if (!this.$v.assunto.$dirty) return erros;
+      if (!this.$v.assunto.required) erros.push('Por favor, insira seu assunto');
+      return erros;
+    },
+    mensagemErros() {
+      const erros = [];
+      if (!this.$v.mensagem.$dirty) return erros;
+      if (!this.$v.mensagem.required) erros.push('Por favor, insira sua mensagem');
+      return erros;
     },
   },
 };
