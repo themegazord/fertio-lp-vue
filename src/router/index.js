@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 import HomeView from '../views/Home/HomeView.vue';
 import QuemSomos from '../views/QuemSomos/QuemSomos.vue';
 import Formulario from '../views/Formulario/FormularioView.vue';
+import Page404 from '../views/NotFound/NotFound.vue';
 
 Vue.use(VueRouter);
 
@@ -25,14 +26,17 @@ const routes = [
   {
     path: '/produtos',
     name: 'produtos',
+    component: Page404,
   },
   {
     path: '/parceiros',
     name: 'parceiros',
+    component: Page404,
   },
   {
     path: '/contatos',
     name: 'contatos',
+    component: Page404,
   },
 ];
 
