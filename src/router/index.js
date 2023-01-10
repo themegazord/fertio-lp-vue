@@ -36,7 +36,7 @@ const routes = [
   {
     path: '/contatos',
     name: 'contatos',
-    component: Page404,
+    component: Formulario,
   },
 ];
 

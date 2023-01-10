@@ -23,7 +23,7 @@
           </span>
           <p class="telefones">(41) 3336-5465</p>
           <p class="telefones">(41) 9 9626-7118</p>
-          <p class="telefones pe">(87) 9 8834-7713</p>
+          <p class="telefones pe">(87) 9 8119-8493</p>
         </div>
       </div>
       <RedeSocial id="redes-sociais-form" />
