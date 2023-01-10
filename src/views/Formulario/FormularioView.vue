@@ -1405,7 +1405,7 @@ export default {
 
   #sub-titulo-form-contato {
     font-size: 19px;
-    line-height: 12px;
+    line-height: 16px;
   }
 
   #form-form-contato {
