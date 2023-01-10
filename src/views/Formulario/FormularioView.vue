@@ -36,19 +36,31 @@
         </h3>
         <v-form id="form-form-contato" v-model="valid" @submit.prevent="submit">
           <v-text-field
+            v-model="nome"
             class="nome-completo"
             label="Nome Completo"
             placeholder="Nome Completo"
             solo></v-text-field>
           <div id="email-telefone-form-contato">
-            <v-text-field class="email" label="E-mail" placeholder="E-mail" solo></v-text-field>
             <v-text-field
+              v-model="email"
+              class="email"
+              label="E-mail"
+              placeholder="E-mail" solo>
+            </v-text-field>
+            <v-text-field
+              v-model="telefone"
               class="telefone"
               label="Telefone"
               placeholder="Telefone" solo></v-text-field>
           </div>
-          <v-text-field class="assunto" label="Assunto" placeholder="Assunto" solo></v-text-field>
-          <v-textarea rows="7" label="Mensagem" solo></v-textarea>
+          <v-text-field
+            v-model="assunto"
+            class="assunto"
+            label="Assunto"
+            placeholder="Assunto" solo>
+          </v-text-field>
+          <v-textarea v-model="mensagem" rows="7" label="Mensagem" solo></v-textarea>
           <div id="div-button">
             <button type="submit" id="submit-enviar">Enviar</button>
           </div>
@@ -65,10 +77,19 @@ export default {
   components: { RedeSocial },
   data: () => ({
     valid: false,
+    nome: '',
+    email: '',
+    telefone: '',
+    assunto: '',
+    mensagem: '',
   }),
   methods: {
     submit() {
+      const fullMessage = encodeURI(`Olá 😊.$Meu nome é *${this.nome
+      }* e fiquei interessado no seu produto.$✉️ = *${this.email}*.$📱 = *${
+        this.telefone}*.$🤔 = *${this.assunto}*.$💬 = *${this.mensagem}*`);
 
+      window.open(`https://api.whatsapp.com/send?phone=5541996267118&text=${fullMessage.replaceAll('$', '%0D')}`);
     },
   },
 };
