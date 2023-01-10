@@ -1377,4 +1377,39 @@ export default {
     margin-top: 45.678px;
   }
 }
+@media screen and (max-height: 770px) {
+  #info-contato-formulario-main-container {
+    margin-top: 70.713px;
+  }
+
+  #endereco-info-contato {
+    margin-top: 28.363px;
+  }
+
+  #titulo-form-contato {
+    margin-bottom: 16.685px;
+  }
+
+  #sub-titulo-form-contato {
+    margin-bottom: 20px;
+  }
+
+  #submit-enviar {
+    width: 150px;
+    height: 50px;
+  }
+
+  #div-button {
+    margin-top: 0px;
+  }
+
+  #sub-titulo-form-contato {
+    font-size: 19px;
+    line-height: 12px;
+  }
+
+  #form-form-contato {
+    margin-top: 45.678px;
+  }
+}
 </style>
