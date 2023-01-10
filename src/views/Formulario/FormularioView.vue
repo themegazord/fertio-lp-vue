@@ -734,6 +734,170 @@ export default {
     font-family: 'Mulish';
   }
 }
+@media screen and (max-width: 1366px) {
+  #info-contato-formulario-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-top: 77.653px;
+  }
+
+  #formulario-main-container {
+    background-color: #092E58;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #form-contato {
+    background-color: #FFFFFF;
+    border-radius: 58px 0 0 58px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #titulo-info-contato {
+    font-size: 34.15px;
+    line-height: 44.395px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.038em;
+    color: #FFFFFF;
+    margin-left: 26.68px;
+  }
+
+  #meio-info-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    gap: 29.867px;
+  }
+
+  #email-info-contato,
+  #endereco-info-contato,
+  #telefones-info-contato {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #endereco-info-contato {
+    margin-top: 48.64px;
+  }
+
+  #titulo-endereco-info-container,
+  #titulo-email-info-container,
+  #titulo-telefones-info-contato {
+    font-size: 19.636px;
+    line-height: 27.32px;
+    font-weight: 700;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    margin-bottom: 12.8px;
+  }
+
+  #logradouro-endereco-info-container,
+  #email-email-info-container,
+  .telefones {
+    font-size: 19.636px;
+    line-height: 27.32px;
+    font-weight: 400;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+
+  .pe {
+    padding-top: 32px;
+  }
+
+  #redes-sociais-form {
+    position: absolute;
+    bottom: 40.79px;
+    left: 109.28px;
+    display: flex;
+    gap: 14.941px;
+  }
+
+  #titulo-form-contato {
+    font-size: 34.15px;
+    line-height: 25.613px;
+    font-weight: 700;
+    color: #019A34;
+    margin-bottom: 23.893px;
+  }
+
+  #sub-titulo-form-contato {
+    font-size: 21.344px;
+    line-height: 25.613px;
+    font-weight: 400;
+    color: #383A47;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    width: 640.313px;
+  }
+
+  #form-contato-content {
+    width: 80%
+  }
+
+  #form-form-contato {
+    width: 100%;
+    margin-top: 46.080px;
+  }
+
+  #email-telefone-form-contato {
+    display: flex;
+    gap: 26.68px;
+  }
+
+  .email .v-input__slot,
+  .nome-completo .v-input__slot,
+  .telefone .v-input__slot,
+  .assunto .v-input__slot {
+    height: 48.64px;
+    font-size: 17.075px;
+  }
+
+  .v-input__slot {
+    background: #F5F5F5;
+    border: 1px solid #E1E1E1;
+  }
+
+  .v-label {
+    font-family: 'Mulish';
+    font-size: 14.941px;
+    line-height: 15.368px;
+  }
+
+  #div-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 29.867px;
+  }
+
+  #submit-enviar {
+    width: 149.406px;
+    height: 55.467px;
+    background: #019A34;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px 0px;
+    font-size: 25.613px;
+    line-height: 18.783px;
+    color: #FFFFFF;
+    font-family: 'Mulish';
+  }
+}
 
 /* Media Height */
 @media screen and (max-height: 1300px) {
