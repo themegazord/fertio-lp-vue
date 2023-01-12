@@ -1010,4 +1010,127 @@ export default {
   }
 
 }
+@media screen and (max-width: 640px) {
+  #home-main-container {
+  display: flex;
+  position:absolute;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: initial;
+  width: 100%;
+  height: calc(100vh - 75px);
+}
+
+#fazendeiro {
+  width: 29.948rem;
+  height: 34.595rem;
+  position: absolute;
+  bottom: 0;
+  right: 75px;
+}
+
+#circulo-verde {
+  position: absolute;
+  bottom: 0;
+  right: 7.156rem;
+  width: 26rem;
+  height: 25rem;
+}
+
+#aro-aberto {
+  position: absolute;
+  bottom: 0;
+  right: 5.156rem;
+  width: 26rem;
+  height: 25rem;
+}
+
+#left-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-height: calc(50vh - 90px);
+  gap: 4.258rem;
+  margin-top: 5rem;
+}
+
+.left-main-container {
+  width: 75%;
+  gap: 1.597rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#title-left-main-container {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: #092E58;
+}
+
+#desc-left-main-container {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.387rem;
+  line-height: 1.703rem;
+  color: #383A47;
+}
+
+#btn-left-main-container {
+  width: 28.267rem;
+  height: 4.101rem;
+  font-size: 1.600rem;
+  font-weight: 700;
+  background-color: #CFFD00;
+  border-radius: 10px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#btn-left-main-container img {
+  width: 1.6rem;
+  height: 1.417rem;
+}
+
+#linha-vertical {
+  width: 40px;
+  transform: rotate(90deg);
+  border: 1px solid;
+  display: none;
+}
+
+.bottom-left-main-container {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.703rem;
+}
+
+#depoimento-fazenda-inova {
+  position: absolute;
+}
+
+#depoimento-cassio-souza {
+  position: absolute;
+}
+
+#info-11anos {
+    width: 80%;
+    height: 100px;
+  }
+
+  #avaliacao {
+    width: 40%;
+    height: 100px;
+  }
+
+}
 </style>
