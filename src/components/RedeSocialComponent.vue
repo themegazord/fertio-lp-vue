@@ -1,7 +1,10 @@
 <template>
   <div
-    :class="{'quem-somos': this.$route.name === 'quem-somos',
-     'formulario': this.$route.name === 'formulario'}">
+    :class="{
+      'quem-somos': this.$route.name === 'quem-somos',
+      'formulario': this.$route.name === 'formulario',
+      'menu-lateral': MenuLateral,
+      }">
     <a><font-awesome-icon icon="fa-brands fa-square-facebook" id="fb"/></a>
     <a href="https://instagram.com/fertiofertilizantes"
       target="_blank"
@@ -15,7 +18,10 @@
 
 <script>
 export default {
+  props: ['MenuLateral'],
+  data: () => ({
 
+  }),
 };
 </script>
 
@@ -28,5 +34,9 @@ export default {
 .formulario > a {
   text-decoration: none;
   color: #FFFFFF;
+}
+
+.menu-lateral > a {
+  color: #092E58;
 }
 </style>

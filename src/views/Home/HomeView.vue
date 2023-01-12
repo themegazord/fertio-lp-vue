@@ -170,7 +170,7 @@ export default {
 #depoimento-cassio-souza {
   position: absolute;
 }
-
+/* Responsividade Largura */
 @media screen and (max-width: 2560px) {
   #depoimento-fazenda-inova {
     bottom: 400px;
@@ -866,7 +866,13 @@ export default {
     height: 48px;
   }
 }
-
+/* Responsividade Altura */
+@media screen and (max-height: 1290px) {
+  #fazendeiro {
+    height: 1000px;
+    width: 925px;
+  }
+}
 @media screen and (max-height: 950px) {
   #fazendeiro {
     height: 800px;
@@ -882,5 +888,126 @@ export default {
     width: 580px;
     height: 600px
   }
+}
+
+/* Responsividade Mobile */
+@media screen and (max-width: 768px) {
+  #home-main-container {
+  display: flex;
+  position:absolute;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: initial;
+  width: 100%;
+  height: calc(100vh - 75px);
+}
+
+#fazendeiro {
+  width: 575px;
+  height: 650px;
+  position: absolute;
+  bottom: 0;
+  right: 75px;
+}
+
+#circulo-verde {
+  position: absolute;
+  bottom: 0;
+  right: 195px;
+}
+
+#aro-aberto {
+  position: absolute;
+  bottom: 0;
+  right: 175px;
+}
+
+#left-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-height: calc(50vh - 90px);
+  gap: 5rem;
+  margin-top: 5rem;
+}
+
+.left-main-container {
+  width: 75%;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+#title-left-main-container {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.84rem;
+  line-height: 4.211rem;
+  color: #092E58;
+}
+
+#desc-left-main-container {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.664rem;
+  line-height: 2rem;
+  color: #383A47;
+}
+
+#btn-left-main-container {
+  width: 33.920rem;
+  height: 4.816rem;
+  font-size: 1.920rem;
+  font-weight: 700;
+  background-color: #CFFD00;
+  border-radius: 10px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#btn-left-main-container img {
+  width: 1.920rem;
+  height: 1.664rem;
+}
+
+#linha-vertical {
+  width: 40px;
+  transform: rotate(90deg);
+  border: 1px solid;
+  display: none;
+}
+
+.bottom-left-main-container {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+#depoimento-fazenda-inova {
+  position: absolute;
+}
+
+#depoimento-cassio-souza {
+  position: absolute;
+}
+
+#info-11anos {
+    width: 80%;
+    height: 100px;
+  }
+
+  #avaliacao {
+    width: 40%;
+    height: 100px;
+  }
+
 }
 </style>
