@@ -1,3 +1,4 @@
+<!-- eslint-disable max-len -->
 <template>
   <div id="home">
     <Navbar />
@@ -14,37 +15,25 @@
           </button>
         </div>
         <div class="bottom-left-main-container">
-          <img src="../../assets/11-anos.png"
-           alt="Informações de 11 anos da empresa"
-           id="info-11anos">
+          <img src="../../assets/11-anos.png" alt="Informações de 11 anos da empresa" id="info-11anos">
           <hr id="linha-vertical">
-          <img
-          src="../../assets/avaliacao.png"
-          alt="Avaliação da empresa de 4,8 de 5 estrelas"
-          id="avaliacao">
+          <img src="../../assets/avaliacao.png" alt="Avaliação da empresa de 4,8 de 5 estrelas" id="avaliacao">
         </div>
       </div>
-      <img src="https://i.ibb.co/LzZ3PKf/circulo-verde.png" alt="circulo-verde" id="circulo-verde">
-      <img src="https://i.ibb.co/XjGDmDB/aro-aberto.png" alt="aro-aberto" id="aro-aberto">
-      <img src="https://i.ibb.co/cDynFQ6/fazendeiro-removebg-preview-1.png" alt="fazendeiro-removebg-preview-1"
-        id="fazendeiro">
-      <Depoimentos
-      id="depoimento-fazenda-inova"
-      titulo="Fazenda Inova"
-      descricao="A parceria com a Fertio elevou a qualidade e a produtividade de nossas culturas!">
-        <img src="../../assets/fazenda_inova.png"
-        alt="Fazenda Inova"
-        id="imagem-esq-card-depoimentos" />
-      </Depoimentos>
-      <Depoimentos
-      id="depoimento-cassio-souza"
-      titulo="Cássio de Souza"
-      descricao="Satisfeito! Colhendo ótimos resultados graças a Fertio.">
-        <img
-        src="../../assets/cassio-souza.png"
-        alt="Foto do Cassio de Souza"
-        id="imagem-esq-card-depoimentos">
-      </Depoimentos>
+      <div id="right-main-container">
+        <img src="https://i.ibb.co/LzZ3PKf/circulo-verde.png" alt="circulo-verde" id="circulo-verde">
+        <img src="https://i.ibb.co/XjGDmDB/aro-aberto.png" alt="aro-aberto" id="aro-aberto">
+        <img src="https://i.ibb.co/cDynFQ6/fazendeiro-removebg-preview-1.png" alt="fazendeiro-removebg-preview-1"
+          id="fazendeiro">
+        <Depoimentos id="depoimento-fazenda-inova" titulo="Fazenda Inova"
+          descricao="A parceria com a Fertio elevou a qualidade e a produtividade de nossas culturas!">
+          <img src="../../assets/fazenda_inova.png" alt="Fazenda Inova" id="imagem-esq-card-depoimentos" />
+        </Depoimentos>
+        <Depoimentos id="depoimento-cassio-souza" titulo="Cássio de Souza"
+          descricao="Satisfeito! Colhendo ótimos resultados graças a Fertio.">
+          <img src="../../assets/cassio-souza.png" alt="Foto do Cassio de Souza" id="imagem-esq-card-depoimentos">
+        </Depoimentos>
+      </div>
     </div>
   </div>
 </template>
@@ -67,7 +56,982 @@ export default {
 </script>
 
 <style>
-#home {
+#fazendeiro {
+  width: 95%;
+  height: 95%;
+}
+
+#aro-aberto{
+  width: 80%;
+  height: 70%;
+}
+
+#circulo-verde {
+  width: 80%;
+  height: 70%;
+}
+@media screen and (max-width: 2560px) {
+  #home {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+  }
+
+  #home-main-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-height: calc(100vh - 90px)
+  }
+
+  #left-main-container {
+    max-height:  calc(100vh - 90px);
+    height:  calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .left-main-container,
+  .bottom-left-main-container {
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  .left-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+
+  #title-left-main-container {
+    font-size: 5rem;
+    line-height: 5.117rem;
+    color: #092E58;
+    font-weight: 700;
+  }
+
+  #desc-left-main-container {
+    width: 90%;
+    font-size: 2.2rem;
+    line-height: 2.729rem;
+    font-weight: 400;
+    color: #383A47;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+
+  #btn-left-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 26.5rem;
+    height: 3.838rem;
+    background: #CFFD00;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #092E58;
+    border-radius: 1rem;
+  }
+
+  #btn-left-main-container img {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .bottom-left-main-container {
+    display: flex;
+    align-items: center;
+  }
+
+  #info-11anos {
+    width: 29rem;
+    height: 5.969rem;
+  }
+
+  #linha-vertical {
+    width: 3.411rem;
+    transform: rotate(90deg);
+    border: 1px solid;
+  }
+
+  #avaliacao {
+    width: 13.5rem;
+    height: 5.969rem;
+  }
+
+  #right-main-container {
+    max-height:  calc(100vh - 90px);
+    height:  calc(100vh - 90px);
+    position: relative;
+    right: 0;
+    bottom: 0;
+    overflow-y: hidden;
+  }
+
+  #fazendeiro {
+    position: absolute;
+    bottom: 0;
+    right: 7rem;
+    /* width: 62.5rem;
+    height: 59.375rem; */
+  }
+
+  #aro-aberto {
+    position: absolute;
+    bottom: 0;
+    right: 11rem;
+    /* width: 46.5625rem;
+    height: 42.5rem; */
+  }
+
+  #circulo-verde {
+    position: absolute;
+    bottom: 0;
+    right: 15rem;
+    /* width: 44.6875rem;
+    height: 40.625rem; */
+  }
+
+  #depoimento-fazenda-inova {
+    position: absolute;
+    bottom: 20rem;
+    right: 7rem;
+  }
+
+  #depoimento-cassio-souza {
+    position: absolute;
+    bottom: 10rem;
+    right: 45rem;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  #home {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+  }
+
+  #home-main-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-height: calc(100vh - 90px)
+  }
+
+  #left-main-container {
+    max-height:  calc(100vh - 90px);
+    height:  calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .left-main-container,
+  .bottom-left-main-container {
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  .left-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.199rem;
+  }
+
+  #title-left-main-container {
+    font-size: 3.75rem;
+    line-height: 3.75rem;
+    color: #092E58;
+    font-weight: 700;
+  }
+
+  #desc-left-main-container {
+    width: 90%;
+    font-size: 1.65rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: #383A47;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+
+  #btn-left-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .75rem;
+    width: 19.875rem;
+    height: 2.813rem;
+    background: #CFFD00;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #092E58;
+    border-radius: 1rem;
+  }
+
+  #btn-left-main-container img {
+    width: 1.35rem;
+    height: 1.35rem;
+  }
+
+  .bottom-left-main-container {
+    display: flex;
+    align-items: center;
+  }
+
+  #info-11anos {
+    width: 21.75rem;
+    height: 4.375rem;
+  }
+
+  #linha-vertical {
+    width: 2.558rem;
+    transform: rotate(90deg);
+    border: 1px solid;
+  }
+
+  #avaliacao {
+    width: 10.125rem;
+    height: 4.375rem;
+  }
+
+  #right-main-container {
+    max-height:  calc(100vh - 90px);
+    height:  calc(100vh - 90px);
+    position: relative;
+    right: 0;
+    bottom: 0;
+    overflow-y: hidden;
+  }
+
+  #fazendeiro {
+    position: absolute;
+    bottom: 0;
+    right: 5.5rem;
+    /* width: 46.875rem;
+    height: 43.516rem; */
+  }
+
+  #aro-aberto {
+    position: absolute;
+    bottom: 0;
+    right: 9.25rem;
+    /* width: 34.922rem;
+    height: 31.148rem; */
+  }
+
+  #circulo-verde {
+    position: absolute;
+    bottom: 0;
+    right: 12rem;
+    /* width: 33.516rem;
+    height: 29.774rem; */
+  }
+
+  #depoimento-fazenda-inova {
+    position: absolute;
+    bottom: 14.658rem;
+    right: 5.250rem;
+  }
+
+  #depoimento-cassio-souza {
+    position: absolute;
+    bottom: 7.329rem;
+    right: 33.75rem;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  #home {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+  }
+
+  #home-main-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-height: calc(100vh - 90px)
+  }
+
+  #left-main-container {
+    max-height:  calc(100vh - 90px);
+    height:  calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .left-main-container,
+  .bottom-left-main-container {
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  .left-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.101rem;
+  }
+
+  #title-left-main-container {
+    font-size: 3.125rem;
+    line-height: 3.583rem;
+    color: #092E58;
+    font-weight: 700;
+  }
+
+  #desc-left-main-container {
+    width: 90%;
+    font-size: 1.375rem;
+    line-height: 1.911rem;
+    font-weight: 400;
+    color: #383A47;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+
+  #btn-left-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .625rem;
+    width: 16.563rem;
+    height: 2.688rem;
+    background: #CFFD00;
+    font-size: 0.938rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #092E58;
+    border-radius: 1rem;
+  }
+
+  #btn-left-main-container img {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+
+  .bottom-left-main-container {
+    display: flex;
+    align-items: center;
+  }
+
+  #info-11anos {
+    width: 18.125rem;
+    height: 4.181rem;
+  }
+
+  #linha-vertical {
+    width: 2.132rem;
+    transform: rotate(90deg);
+    border: 1px solid;
+  }
+
+  #avaliacao {
+    width: 8.438rem;
+    height: 4.181rem;
+  }
+
+  #right-main-container {
+    max-height:  calc(100vh - 90px);
+    height:  calc(100vh - 90px);
+    position: relative;
+    right: 0;
+    bottom: 0;
+    overflow-y: hidden;
+  }
+
+  #fazendeiro {
+    position: absolute;
+    bottom: 0;
+    right: 4.25rem;
+    /* width: 39.063rem;
+    height: 41.582rem; */
+  }
+
+  #aro-aberto {
+    position: absolute;
+    bottom: 0;
+    right: 7.375rem;
+    /* width: 29.102rem;
+    height: 29.764rem; */
+  }
+
+  #circulo-verde {
+    position: absolute;
+    bottom: 0;
+    right: 9.5rem;
+    /* width: 27.93rem;
+    height: 28.451rem; */
+  }
+
+  #depoimento-fazenda-inova {
+    position: absolute;
+    bottom: 14.007rem;
+    right: 4.375rem;
+  }
+
+  #depoimento-cassio-souza {
+    position: absolute;
+    bottom: 7.003rem;
+    right: 28.125rem;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  #home {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+  }
+
+  #home-main-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-height: calc(100vh - 90px)
+  }
+
+  #left-main-container {
+    max-height:  calc(100vh - 90px);
+    height:  calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .left-main-container,
+  .bottom-left-main-container {
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  .left-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.101rem;
+  }
+
+  #title-left-main-container {
+    font-size: 3.125rem;
+    line-height: 3.583rem;
+    color: #092E58;
+    font-weight: 700;
+  }
+
+  #desc-left-main-container {
+    width: 90%;
+    font-size: 1.375rem;
+    line-height: 1.911rem;
+    font-weight: 400;
+    color: #383A47;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+
+  #btn-left-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .625rem;
+    width: 16.563rem;
+    height: 2.688rem;
+    background: #CFFD00;
+    font-size: 0.938rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #092E58;
+    border-radius: 1rem;
+  }
+
+  #btn-left-main-container img {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+
+  .bottom-left-main-container {
+    display: flex;
+    align-items: center;
+  }
+
+  #info-11anos {
+    width: 18.125rem;
+    height: 4.181rem;
+  }
+
+  #linha-vertical {
+    width: 2.132rem;
+    transform: rotate(90deg);
+    border: 1px solid;
+  }
+
+  #avaliacao {
+    width: 8.438rem;
+    height: 4.181rem;
+  }
+
+  #right-main-container {
+    max-height:  calc(100vh - 90px);
+    height:  calc(100vh - 90px);
+    position: relative;
+    right: 0;
+    bottom: 0;
+    overflow-y: hidden;
+  }
+
+  #fazendeiro {
+    position: absolute;
+    bottom: 0;
+    right: 3.625rem;
+    /* width: 39.063rem;
+    height: 41.582rem; */
+  }
+
+  #aro-aberto {
+    position: absolute;
+    bottom: 0;
+    right: 6.438rem;
+    /* width: 29.102rem;
+    height: 29.764rem; */
+  }
+
+  #circulo-verde {
+    position: absolute;
+    bottom: 0;
+    right: 8.25rem;
+    /* width: 27.93rem;
+    height: 28.451rem; */
+  }
+
+  #depoimento-fazenda-inova {
+    position: absolute;
+    bottom: 14.007rem;
+    right: 3.938rem;
+  }
+
+  #depoimento-cassio-souza {
+    position: absolute;
+    bottom: 7.003rem;
+    right: 25.313rem;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  #home {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+  }
+
+  #home-main-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-height: calc(100vh - 90px)
+  }
+
+  #left-main-container {
+    max-height:  calc(100vh - 90px);
+    height:  calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .left-main-container,
+  .bottom-left-main-container {
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  .left-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.876rem;
+  }
+
+  #title-left-main-container {
+    font-size: 2.964rem;
+    line-height: 3.2rem;
+    color: #092E58;
+    font-weight: 700;
+  }
+
+  #desc-left-main-container {
+    width: 90%;
+    font-size: 1.304rem;
+    line-height: 1.707rem;
+    font-weight: 400;
+    color: #383A47;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+
+  #btn-left-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .593rem;
+    width: 15.712rem;
+    height: 1.707rem;
+    background: #CFFD00;
+    font-size: 0.890rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #092E58;
+    border-radius: 1rem;
+  }
+
+  #btn-left-main-container img {
+    width: 1.067rem;
+    height: 1.067rem;
+  }
+
+  .bottom-left-main-container {
+    display: flex;
+    align-items: center;
+  }
+
+  #info-11anos {
+    width: 17.194rem;
+    height: 3.734rem;
+  }
+
+  #linha-vertical {
+    width: 2.022rem;
+    transform: rotate(90deg);
+    border: 1px solid;
+  }
+
+  #avaliacao {
+    width: 8.004rem;
+    height: 3.734rem;
+  }
+
+  #right-main-container {
+    max-height:  calc(100vh - 90px);
+    height:  calc(100vh - 90px);
+    position: relative;
+    right: 0;
+    bottom: 0;
+    overflow-y: hidden;
+  }
+
+  #fazendeiro {
+    position: absolute;
+    bottom: 0;
+    right: 3.336rem;
+    /* width: 37.056rem;
+    height: 37.134rem; */
+  }
+
+  #aro-aberto {
+    position: absolute;
+    bottom: 0;
+    right: 6.004rem;
+    /* width: 27.606rem;
+    height: 26.580rem; */
+  }
+
+  #circulo-verde {
+    position: absolute;
+    bottom: 0;
+    right: 7.672rem;
+    /* width: 26.495rem;
+    height: 25.407rem; */
+  }
+
+  #depoimento-fazenda-inova {
+    position: absolute;
+    bottom: 12.509rem;
+    right: 3.736rem;
+  }
+
+  #depoimento-cassio-souza {
+    position: absolute;
+    bottom: 6.254rem;
+    right: 24.012rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #home {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+  }
+
+  #home-main-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-height: calc(100vh - 90px)
+  }
+
+  #left-main-container {
+    max-height:  calc(100vh - 90px);
+    height:  calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .left-main-container,
+  .bottom-left-main-container {
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  .left-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.954rem;
+  }
+
+  #title-left-main-container {
+    font-size: 2.777rem;
+    line-height: 3.333rem;
+    color: #092E58;
+    font-weight: 700;
+  }
+
+  #desc-left-main-container {
+    width: 90%;
+    font-size: 1.222rem;
+    line-height: 1.778rem;
+    font-weight: 400;
+    color: #383A47;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+
+  #btn-left-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .556rem;
+    width: 14.723rem;
+    height: 1.778rem;
+    background: #CFFD00;
+    font-size: 0.834rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #092E58;
+    border-radius: 1rem;
+  }
+
+  #btn-left-main-container img {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .bottom-left-main-container {
+    display: flex;
+    align-items: center;
+  }
+
+  #info-11anos {
+    width: 16.112rem;
+    height: 3.890rem;
+  }
+
+  #linha-vertical {
+    width: 1.895rem;
+    transform: rotate(90deg);
+    border: 1px solid;
+  }
+
+  #avaliacao {
+    width: 7.5rem;
+    height: 3.89rem;
+  }
+
+  #right-main-container {
+    max-height:  calc(100vh - 90px);
+    height:  calc(100vh - 90px);
+    position: relative;
+    right: 0;
+    bottom: 0;
+    overflow-y: hidden;
+  }
+
+  #fazendeiro {
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
+    /* width: 34.723rem;
+    height: 38.681rem; */
+    /* width: 86.8075%;
+    height: 77.362%; */
+  }
+
+  #aro-aberto {
+    position: absolute;
+    bottom: 0;
+    right: 5.5rem;
+    /* width: 25.868rem;
+    height: 27.688rem; */
+  }
+
+  #circulo-verde {
+    position: absolute;
+    bottom: 0;
+    right: 7.672rem;
+    /* width: 26.495rem;
+    height: 25.407rem; */
+  }
+
+  #depoimento-fazenda-inova {
+    position: absolute;
+    bottom: 13.030rem;
+    right: 3.501rem;
+  }
+
+  #depoimento-cassio-souza {
+    position: absolute;
+    bottom: 6.515rem;
+    right: 22.5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #home {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+  }
+
+  #home-main-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-height: calc(100vh - 90px)
+  }
+
+  #left-main-container {
+    max-height:  calc(100vh - 90px);
+    height:  calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .left-main-container,
+  .bottom-left-main-container {
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  .left-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.876rem;
+  }
+
+  #title-left-main-container {
+    font-size: 2.222rem;
+    line-height: 3.2rem;
+    color: #092E58;
+    font-weight: 700;
+  }
+
+  #desc-left-main-container {
+    width: 90%;
+    font-size: 0.978rem;
+    line-height: 1.707rem;
+    font-weight: 400;
+    color: #383A47;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+
+  #btn-left-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .445rem;
+    width: 11.778rem;
+    height: 1.707rem;
+    background: #CFFD00;
+    font-size: 0.667rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #092E58;
+    border-radius: 1rem;
+  }
+
+  #btn-left-main-container img {
+    width: .8rem;
+    height: .8rem;
+  }
+
+  .bottom-left-main-container {
+    display: flex;
+    align-items: center;
+  }
+
+  #info-11anos {
+    width: 12.89rem;
+    height: 3.734rem;
+  }
+
+  #linha-vertical {
+    width: 1.516rem;
+    transform: rotate(90deg);
+    border: 1px solid;
+  }
+
+  #avaliacao {
+    width: 6rem;
+    height: 3.734rem;
+  }
+
+  #right-main-container {
+    max-height:  calc(100vh - 90px);
+    height:  calc(100vh - 90px);
+    position: relative;
+    right: 0;
+    bottom: 0;
+    overflow-y: hidden;
+  }
+
+  #fazendeiro {
+    position: absolute;
+    bottom: 0;
+    right: 1.6rem;
+  }
+
+  #aro-aberto {
+    position: absolute;
+    bottom: 0;
+    right: 4.4rem;
+  }
+
+  #circulo-verde {
+    position: absolute;
+    bottom: 0;
+    right: 6.138rem;
+  }
+
+  #depoimento-fazenda-inova {
+    position: absolute;
+    bottom: 12.509rem;
+    right: 2.801rem;
+  }
+
+  #depoimento-cassio-souza {
+    position: absolute;
+    bottom: 6.254rem;
+    right: 18rem;
+  }
+}
+/* #home {
   width: 100%;
   height: 100vh;
   background-color: #FFFFFF;
@@ -170,7 +1134,7 @@ export default {
 #depoimento-cassio-souza {
   position: absolute;
 }
-/* Responsividade Largura */
+
 @media screen and (max-width: 2560px) {
   #depoimento-fazenda-inova {
     bottom: 400px;
@@ -292,6 +1256,7 @@ export default {
     bottom: 150px;
     right: 618.75px;
   }
+
   #fazendeiro {
     width: 843.75px;
     height: 900px;
@@ -402,6 +1367,7 @@ export default {
     bottom: 125px;
     right: 515.625px;
   }
+
   #fazendeiro {
     width: 703.125px;
     height: 750px;
@@ -512,6 +1478,7 @@ export default {
     bottom: 125px;
     right: 464.063px;
   }
+
   #fazendeiro {
     width: 703.125px;
     height: 750px;
@@ -547,6 +1514,7 @@ export default {
     bottom: 118.576px;
     right: 440.215px;
   }
+
   #fazendeiro {
     width: 666.992px;
     height: 640px;
@@ -657,6 +1625,7 @@ export default {
     bottom: 111.111px;
     right: 412.5px;
   }
+
   #fazendeiro {
     width: 625px;
     height: 666.667px;
@@ -767,6 +1736,7 @@ export default {
     bottom: 88.889px;
     right: 360px;
   }
+
   #fazendeiro {
     width: 500px;
     height: 640px;
@@ -866,271 +1836,421 @@ export default {
     height: 48px;
   }
 }
-/* Responsividade Altura */
-@media screen and (max-height: 1290px) {
-  #fazendeiro {
-    height: 1000px;
-    width: 925px;
+
+@media screen and (max-width: 768px) {
+  #home-main-container {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: initial;
+    width: 100%;
+    height: calc(100vh - 75px);
   }
+
+  #fazendeiro {
+    width: 575px;
+    height: 650px;
+    position: absolute;
+    bottom: 0;
+    right: 75px;
+  }
+
+  #circulo-verde {
+    position: absolute;
+    bottom: 0;
+    right: 195px;
+  }
+
+  #aro-aberto {
+    position: absolute;
+    bottom: 0;
+    right: 175px;
+  }
+
+  #left-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-height: calc(50vh - 90px);
+    gap: 5rem;
+    margin-top: 5rem;
+  }
+
+  .left-main-container {
+    width: 75%;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #title-left-main-container {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.84rem;
+    line-height: 4.211rem;
+    color: #092E58;
+  }
+
+  #desc-left-main-container {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.664rem;
+    line-height: 2rem;
+    color: #383A47;
+  }
+
+  #btn-left-main-container {
+    width: 33.920rem;
+    height: 4.816rem;
+    font-size: 1.920rem;
+    font-weight: 700;
+    background-color: #CFFD00;
+    border-radius: 10px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #btn-left-main-container img {
+    width: 1.920rem;
+    height: 1.664rem;
+  }
+
+  #linha-vertical {
+    width: 40px;
+    transform: rotate(90deg);
+    border: 1px solid;
+    display: none;
+  }
+
+  .bottom-left-main-container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  #depoimento-fazenda-inova {
+    position: absolute;
+  }
+
+  #depoimento-cassio-souza {
+    position: absolute;
+  }
+
+  #info-11anos {
+    width: 80%;
+    height: 100px;
+  }
+
+  #avaliacao {
+    width: 40%;
+    height: 100px;
+  }
+
 }
+
+@media screen and (max-width: 640px) {
+  #home-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
+    width: 100%;
+    height: calc(100vh - 75px);
+  }
+
+  #right-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #fazendeiro {
+    width: 17.548rem;
+    height: 22.595rem;
+    position: absolute;
+    bottom: 0;
+    right: 7rem;
+  }
+
+  #circulo-verde {
+    width: 18rem;
+    height: 17rem;
+    position: absolute;
+    bottom: 0;
+    right: 7rem;
+  }
+
+  #aro-aberto {
+    width: 18rem;
+    height: 17rem;
+    position: absolute;
+    bottom: 0;
+    right: 8rem;
+  }
+
+  #left-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-height: calc(50vh - 90px);
+    gap: 4.258rem;
+    margin-top: 5rem;
+  }
+
+  .left-main-container {
+    width: 75%;
+    gap: 1.597rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #title-left-main-container {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #092E58;
+  }
+
+  #desc-left-main-container {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 0.9rem;
+    color: #383A47;
+  }
+
+  #btn-left-main-container {
+    width: 16.563rem;
+    height: 3.101rem;
+    font-size: 0.938rem;
+    font-weight: 700;
+    background-color: #CFFD00;
+    border-radius: 10px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #btn-left-main-container img {
+    width: 1.3rem;
+    height: 1.117rem;
+  }
+
+  #linha-vertical {
+    width: 40px;
+    transform: rotate(90deg);
+    border: 1px solid;
+    display: none;
+  }
+
+  .bottom-left-main-container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.303rem;
+  }
+
+  #depoimento-fazenda-inova {
+    position: absolute;
+    bottom: 8rem;
+    right: 3rem;
+  }
+
+  #depoimento-cassio-souza {
+    position: absolute;
+    bottom: 3rem;
+    right: 13rem;
+  }
+
+  #info-11anos {
+    width: 60%;
+    height: 3.5rem;
+  }
+
+  #avaliacao {
+    width: 30%;
+    height: 3rem;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  #home-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
+    width: 100%;
+    height: calc(100vh - 75px);
+  }
+
+  #right-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #fazendeiro {
+    width: 17.548rem;
+    height: 22.595rem;
+  }
+
+  #circulo-verde {
+    width: 18rem;
+    height: 17rem;
+  }
+
+  #aro-aberto {
+    width: 18rem;
+    height: 17rem;
+  }
+
+  #left-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-height: calc(50vh - 90px);
+    gap: 4.258rem;
+    margin-top: 5rem;
+  }
+
+  .left-main-container {
+    width: 75%;
+    gap: 1.597rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #title-left-main-container {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #092E58;
+  }
+
+  #desc-left-main-container {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 0.9rem;
+    color: #383A47;
+  }
+
+  #btn-left-main-container {
+    width: 16.563rem;
+    height: 3.101rem;
+    font-size: 0.938rem;
+    font-weight: 700;
+    background-color: #CFFD00;
+    border-radius: 10px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #btn-left-main-container img {
+    width: 1.3rem;
+    height: 1.117rem;
+  }
+
+  #linha-vertical {
+    width: 40px;
+    transform: rotate(90deg);
+    border: 1px solid;
+    display: none;
+  }
+
+  .bottom-left-main-container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.303rem;
+  }
+
+  #depoimento-fazenda-inova {
+    position: absolute;
+    bottom: 8rem;
+    right: 3rem;
+  }
+
+  #depoimento-cassio-souza {
+    position: absolute;
+    bottom: 3rem;
+    right: 10rem;
+  }
+
+  #info-11anos {
+    width: 60%;
+    height: 3.5rem;
+  }
+
+  #avaliacao {
+    width: 30%;
+    height: 3rem;
+  }
+
+}
+
 @media screen and (max-height: 950px) {
   #fazendeiro {
     height: 800px;
   }
 }
+
 @media screen and (max-height: 900px) {
   #fazendeiro {
     height: 700px
   }
 }
+
 @media screen and (max-height: 780px) {
   #fazendeiro {
     width: 580px;
     height: 600px
   }
 }
-
-/* Responsividade Mobile */
-@media screen and (max-width: 768px) {
-  #home-main-container {
-  display: flex;
-  position:absolute;
-  bottom: 0;
-  flex-direction: column;
-  justify-content: initial;
-  width: 100%;
-  height: calc(100vh - 75px);
-}
-
-#fazendeiro {
-  width: 575px;
-  height: 650px;
-  position: absolute;
-  bottom: 0;
-  right: 75px;
-}
-
-#circulo-verde {
-  position: absolute;
-  bottom: 0;
-  right: 195px;
-}
-
-#aro-aberto {
-  position: absolute;
-  bottom: 0;
-  right: 175px;
-}
-
-#left-main-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  max-height: calc(50vh - 90px);
-  gap: 5rem;
-  margin-top: 5rem;
-}
-
-.left-main-container {
-  width: 75%;
-  gap: 30px;
-  display: flex;
-  flex-direction: column;
-}
-
-#title-left-main-container {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 3.84rem;
-  line-height: 4.211rem;
-  color: #092E58;
-}
-
-#desc-left-main-container {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.664rem;
-  line-height: 2rem;
-  color: #383A47;
-}
-
-#btn-left-main-container {
-  width: 33.920rem;
-  height: 4.816rem;
-  font-size: 1.920rem;
-  font-weight: 700;
-  background-color: #CFFD00;
-  border-radius: 10px;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-#btn-left-main-container img {
-  width: 1.920rem;
-  height: 1.664rem;
-}
-
-#linha-vertical {
-  width: 40px;
-  transform: rotate(90deg);
-  border: 1px solid;
-  display: none;
-}
-
-.bottom-left-main-container {
-  display: flex;
-  flex-direction: column;
-  width: 75%;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2rem;
-}
-
-#depoimento-fazenda-inova {
-  position: absolute;
-}
-
-#depoimento-cassio-souza {
-  position: absolute;
-}
-
-#info-11anos {
-    width: 80%;
-    height: 100px;
+@media screen and (max-height: 690px) {
+  #title-left-main-container {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    color: #092E58;
   }
 
-  #avaliacao {
-    width: 40%;
-    height: 100px;
+  #desc-left-main-container {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 0.9rem;
+    color: #383A47;
   }
 
-}
-@media screen and (max-width: 640px) {
-  #home-main-container {
-  display: flex;
-  position:absolute;
-  bottom: 0;
-  flex-direction: column;
-  justify-content: initial;
-  width: 100%;
-  height: calc(100vh - 75px);
-}
-
-#fazendeiro {
-  width: 29.948rem;
-  height: 34.595rem;
-  position: absolute;
-  bottom: 0;
-  right: 75px;
-}
-
-#circulo-verde {
-  position: absolute;
-  bottom: 0;
-  right: 7.156rem;
-  width: 26rem;
-  height: 25rem;
-}
-
-#aro-aberto {
-  position: absolute;
-  bottom: 0;
-  right: 5.156rem;
-  width: 26rem;
-  height: 25rem;
-}
-
-#left-main-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  max-height: calc(50vh - 90px);
-  gap: 4.258rem;
-  margin-top: 5rem;
-}
-
-.left-main-container {
-  width: 75%;
-  gap: 1.597rem;
-  display: flex;
-  flex-direction: column;
-}
-
-#title-left-main-container {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 3rem;
-  line-height: 3rem;
-  color: #092E58;
-}
-
-#desc-left-main-container {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.387rem;
-  line-height: 1.703rem;
-  color: #383A47;
-}
-
-#btn-left-main-container {
-  width: 28.267rem;
-  height: 4.101rem;
-  font-size: 1.600rem;
-  font-weight: 700;
-  background-color: #CFFD00;
-  border-radius: 10px;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-#btn-left-main-container img {
-  width: 1.6rem;
-  height: 1.417rem;
-}
-
-#linha-vertical {
-  width: 40px;
-  transform: rotate(90deg);
-  border: 1px solid;
-  display: none;
-}
-
-.bottom-left-main-container {
-  display: flex;
-  flex-direction: column;
-  width: 75%;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1.703rem;
-}
-
-#depoimento-fazenda-inova {
-  position: absolute;
-}
-
-#depoimento-cassio-souza {
-  position: absolute;
-}
-
-#info-11anos {
-    width: 80%;
-    height: 100px;
+  #fazendeiro {
+    height: 17.5rem;
+    width: 17rem;
   }
-
-  #avaliacao {
-    width: 40%;
-    height: 100px;
-  }
-
 }
+*/
 </style>

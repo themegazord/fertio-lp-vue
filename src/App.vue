@@ -18,13 +18,13 @@ export default {
 <style>
   html{
     scroll-behavior: smooth;
-    overflow: hidden;
   }
   body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'DM Sans', sans-serif;
+    overflow: hidden;
   }
   a {
     text-decoration: none;

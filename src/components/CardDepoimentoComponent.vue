@@ -24,7 +24,7 @@ export default {
     width: 490px;
     height: 144px;
     background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0px 84px 110px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 84px 110px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.98022px);
     border-radius: 8.88889px;
   }
@@ -66,7 +66,7 @@ export default {
     width: 367.5px;
     height: 108px;
     background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0px 84px 110px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 84px 110px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.98022px);
     border-radius: 8.88889px;
   }
@@ -108,7 +108,7 @@ export default {
     width: 306.25px;
     height: 90px;
     background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0px 84px 110px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 84px 110px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.98022px);
     border-radius: 8.88889px;
   }
@@ -150,7 +150,7 @@ export default {
     width: 306.25px;
     height: 90px;
     background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0px 84px 110px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 84px 110px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.98022px);
     border-radius: 8.88889px;
   }
@@ -192,7 +192,7 @@ export default {
     width: 290.512px;
     height: 76.8px;
     background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0px 84px 110px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 84px 110px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.98022px);
     border-radius: 8.88889px;
   }
@@ -234,7 +234,7 @@ export default {
     width: 272.222px;
     height: 80px;
     background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0px 84px 110px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 84px 110px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.98022px);
     border-radius: 8.88889px;
   }
@@ -276,7 +276,7 @@ export default {
     width: 217.778px;
     height: 60.8px;
     background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0px 84px 110px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 84px 110px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.98022px);
     border-radius: 8.88889px;
   }
