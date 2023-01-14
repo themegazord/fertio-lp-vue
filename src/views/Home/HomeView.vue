@@ -1031,6 +1031,144 @@ export default {
     right: 18rem;
   }
 }
+
+@media screen and (max-width: 768px) {
+  #home {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+  }
+
+  #home-main-container {
+    /* display: grid;
+    grid-template-columns: 50% 50%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: calc(100% - 90px);
+    gap: 7rem;
+  }
+
+  #left-main-container {
+    max-height:  calc(100% - 90px);
+    height:  calc(100% - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 5rem;
+    gap: 5rem;
+  }
+
+  .left-main-container,
+  .bottom-left-main-container {
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  .left-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.876rem;
+  }
+
+  #title-left-main-container {
+    font-size: 3.667rem;
+    line-height: 3.5rem;
+    color: #092E58;
+    font-weight: 700;
+  }
+
+  #desc-left-main-container {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    color: #383A47;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+
+  #btn-left-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 80%;
+    height: 5rem;
+    background: #CFFD00;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #092E58;
+    border-radius: 10px;
+  }
+
+  #btn-left-main-container img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .bottom-left-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+
+  #info-11anos {
+    width: 30rem;
+    height: 7rem;
+  }
+
+  #linha-vertical {
+    display: none;
+  }
+
+  #avaliacao {
+    width: 20rem;
+    height: 10rem;
+  }
+
+  #right-main-container {
+    max-height:  calc(100vh - 90px);
+    height:  900px;
+    width: 100%;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    overflow-y: hidden;
+  }
+
+  #fazendeiro {
+    position: absolute;
+    bottom: 0;
+    right: 1.6rem;
+  }
+
+  #aro-aberto {
+    position: absolute;
+    bottom: 0;
+    right: 4.4rem;
+  }
+
+  #circulo-verde {
+    position: absolute;
+    bottom: 0;
+    right: 6.138rem;
+  }
+
+  #depoimento-fazenda-inova {
+    position: absolute;
+    bottom: 15.509rem;
+    right: 2.801rem;
+  }
+
+  #depoimento-cassio-souza {
+    position: absolute;
+    bottom: 6.254rem;
+    right: 22rem;
+  }
+}
 /* #home {
   width: 100%;
   height: 100vh;

@@ -537,7 +537,7 @@ export default {
 
 /* Mobile Navbar */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   #navbar {
     position: unset;
     top: 0;
