@@ -396,5 +396,46 @@ export default {
     font-weight: 400;
   }
 }
-
+@media screen and (max-width: 375px) {
+  .card-depoimentos{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    width: 9.766rem;
+    height: 2.441rem;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 84px 110px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.98022px);
+    border-radius: 8.88889px;
+  }
+  #esq-card-depoimentos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #imagem-esq-card-depoimentos {
+    width: 1.465rem;
+    height: 1.465rem;
+    border-radius: 100px;
+  }
+  #dir-card-depoimentos {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  #titulo-dir-card-depoimentos {
+    font-size: .439rem;
+    line-height: .439rem;
+    color: #1B1C20;
+    font-weight: 700;
+  }
+  #desc-dir-card-depoimentos {
+    font-size: .439rem;
+    line-height: .439rem;
+    color: #383A47;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    font-weight: 400;
+  }
+}
 </style>
