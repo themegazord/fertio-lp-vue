@@ -38,17 +38,16 @@ export default {
 </script>
 
 <style>
-#veio-qv {
-  width: 130%;
-  height: 100%;
-}
+  #veio-qv {
+    width: 130%;
+    height: 100%;
+  }
 
-#aro-aberto-quem-somos,
-#circulo-verde-quem-somos {
-  width: 60%;
-  height: 60%;
-}
-
+  #aro-aberto-quem-somos,
+  #circulo-verde-quem-somos {
+    width: 60%;
+    height: 60%;
+  }
 @media screen and (max-width: 2560px) {
   #quemsomos-main-container {
     display: grid;
@@ -114,6 +113,77 @@ export default {
     font-weight: 400;
     font-size: 2.6rem;
     line-height: 3.2rem;
+    text-align: center;
+    color: #383A47;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+}
+@media screen and (max-width: 1920px) {
+  #quemsomos-main-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: calc(100vh - 90px);
+  }
+  #compo-quemsomos-main-container {
+    position: relative;
+    overflow: hidden;
+    left: 0;
+    bottom: 0;
+  }
+  #circulo-verde-quem-somos,
+  #aro-aberto-quem-somos,
+  #veio-qv,
+  #redes-sociais {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  #veio-qv {
+    left: -11.25rem;
+  }
+
+  #aro-aberto-quem-somos {
+    left: 11.25rem;
+  }
+
+  #circulo-verde-quem-somos {
+    left: 9rem;
+  }
+
+  #redes-sociais {
+    z-index: 1;
+    left: 2.25rem;
+    bottom: .75rem;
+  }
+  #redes-sociais > a {
+    font-size: 2.25rem;
+    padding: .375rem;
+  }
+
+  #info-quemsomos-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #title-info-quemsomos-main-container {
+    font-family: 'DM Sans';
+    font-size: 3.372rem;
+    line-height: 4.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #092E58;
+  }
+
+  #desc-info-quemsomos-main-container {
+    width: 90%;
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 1.95rem;
+    line-height: 2.4rem;
     text-align: center;
     color: #383A47;
     mix-blend-mode: normal;
