@@ -950,6 +950,97 @@ export default {
     margin-bottom: 3rem;
   }
 }
+@media screen and (max-width: 375px) {
+  #quemsomos-main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  #compo-quemsomos-main-container {
+    position: relative;
+    height: 600px;
+  }
+  #circulo-verde-quem-somos,
+  #aro-aberto-quem-somos,
+  #veio-qv,
+  #redes-sociais {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  #veio-qv {
+    width: 185%;
+    height: 85%;
+  }
+
+  #aro-aberto-quem-somos,
+  #circulo-verde-quem-somos {
+    width: 80%;
+    height: 55%;
+  }
+
+  #veio-qv {
+    left: -12rem;
+  }
+
+  #aro-aberto-quem-somos {
+    left: 2rem;
+  }
+
+  #circulo-verde-quem-somos {
+    left: 1rem;
+  }
+
+  #redes-sociais {
+    display: none;
+    z-index: 1;
+    left: .5rem;
+    bottom: .4rem;
+  }
+  #redes-sociais > a {
+    font-size: 1.2rem;
+    padding: .201rem;
+  }
+
+  #info-quemsomos-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #092E58;
+    border-radius: 15px 15px 0 0;
+  }
+
+  #folha-mobile {
+    display: initial;
+    margin-top: 5rem;
+    width: 1.524rem;
+  }
+
+  #title-info-quemsomos-main-container {
+    font-family: 'DM Sans';
+    font-size: 1.875rem;
+    line-height: 1.875rem;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  #desc-info-quemsomos-main-container {
+    margin-top: 1.765rem;
+    width: 90%;
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-align: center;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    margin-bottom: 3rem;
+  }
+}
 
 /* @media screen and (max-width: 2560px) {
   #redes-sociais {
