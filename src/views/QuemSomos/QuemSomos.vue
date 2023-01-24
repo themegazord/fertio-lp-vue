@@ -332,6 +332,77 @@ export default {
     opacity: 0.8;
   }
 }
+@media screen and (max-width: 1366px) {
+  #quemsomos-main-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: calc(100vh - 90px);
+  }
+  #compo-quemsomos-main-container {
+    position: relative;
+    overflow: hidden;
+    left: 0;
+    bottom: 0;
+  }
+  #circulo-verde-quem-somos,
+  #aro-aberto-quem-somos,
+  #veio-qv,
+  #redes-sociais {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  #veio-qv {
+    left: -8.004em;
+  }
+
+  #aro-aberto-quem-somos {
+    left: 8.004em;
+  }
+
+  #circulo-verde-quem-somos {
+    left: 6.403rem;
+  }
+
+  #redes-sociais {
+    z-index: 1;
+    left: 1.601rem;
+    bottom: .534rem;
+  }
+  #redes-sociais > a {
+    font-size: 1.601rem;
+    padding: .268rem;
+  }
+
+  #info-quemsomos-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #title-info-quemsomos-main-container {
+    font-family: 'DM Sans';
+    font-size: 2.399rem;
+    line-height: 3.202rem;
+    font-weight: 700;
+    text-align: center;
+    color: #092E58;
+  }
+
+  #desc-info-quemsomos-main-container {
+    width: 90%;
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 1.388rem;
+    line-height: 1.708rem;
+    text-align: center;
+    color: #383A47;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+}
 
 /* @media screen and (max-width: 2560px) {
   #redes-sociais {
