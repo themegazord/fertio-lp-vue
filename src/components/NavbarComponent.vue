@@ -688,7 +688,7 @@ export default {
     display: flex;
     flex-direction: column;
     width: 0;
-    height: calc(100vh - 90px);
+    height: 100vh;
     position: fixed;
     top: 0;
     right: 0;
@@ -766,7 +766,7 @@ export default {
     display: flex;
     flex-direction: column;
     width: 0;
-    height: calc(100vh - 90px);
+    height: 100vh;
     position: fixed;
     top: 0;
     right: 0;
