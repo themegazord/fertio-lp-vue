@@ -20,12 +20,6 @@
         <a id="hamburger"><i class="fa-solid fa-bars"></i></a>
       </label>
         <div id="menu-lateral" @click.stop>
-          <div id="container-logo__menu-lateral">
-            <img
-              src="./../assets/logo.png"
-              alt="Logo da Fertio Fertilizantes"
-              id="logo__menu-lateral" />
-          </div>
           <div id="container-links__menu-lateral">
             <router-link class="link__menu-lateral" v-for="link, i in links" :key="i" :to="link.to">
               <a>
@@ -635,6 +629,10 @@ export default {
     height: 80%;
   }
 
+  #container-links__menu-lateral {
+    margin-top: 5rem;
+  }
+
   .link__menu-lateral {
     display: flex;
     width: 100%;
@@ -728,7 +726,7 @@ export default {
     color: #092E58;
     padding: .768rem;
     font-family: Inter;
-    font-size: .768rem;
+    font-size: 1rem;
     font-weight: 700;
   }
 
@@ -806,7 +804,7 @@ export default {
     color: #092E58;
     padding: .5rem;
     font-family: Inter;
-    font-size: .5rem;
+    font-size: .8rem;
     font-weight: 700;
   }
 
