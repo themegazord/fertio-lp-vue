@@ -10,6 +10,7 @@
           alt="shutterstock-2173227909-removebg-preview" id="veio-qv" />
       </div>
       <div id="info-quemsomos-main-container">
+        <img src="../../assets/folha-mobile.png" alt="Folha Fertio" id="folha-mobile">
         <h3 id="title-info-quemsomos-main-container">Quem Somos</h3>
         <p id="desc-info-quemsomos-main-container">
           Desde 2012, a <strong>Fertio Fertilizantes</strong> atua no mercado de
@@ -47,6 +48,10 @@ export default {
   #circulo-verde-quem-somos {
     width: 60%;
     height: 60%;
+  }
+
+  #folha-mobile {
+    display: none;
   }
 @media screen and (max-width: 2560px) {
   #quemsomos-main-container {
@@ -576,6 +581,100 @@ export default {
     color: #383A47;
     mix-blend-mode: normal;
     opacity: 0.8;
+  }
+}
+
+/* Responsividade Mobile */
+
+@media screen and (max-width: 768px) {
+  #quemsomos-main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  #compo-quemsomos-main-container {
+    position: relative;
+    height: 600px;
+  }
+  #circulo-verde-quem-somos,
+  #aro-aberto-quem-somos,
+  #veio-qv,
+  #redes-sociais {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  #veio-qv {
+    width: 110%;
+    height: 95%;
+  }
+
+  #aro-aberto-quem-somos,
+  #circulo-verde-quem-somos {
+    width: 60%;
+    height: 60%;
+  }
+
+  #veio-qv {
+    left: -5rem;
+  }
+
+  #aro-aberto-quem-somos {
+    left: 10rem;
+  }
+
+  #circulo-verde-quem-somos {
+    left: 9rem;
+  }
+
+  #redes-sociais {
+    display: none;
+    z-index: 1;
+    left: .5rem;
+    bottom: .4rem;
+  }
+  #redes-sociais > a {
+    font-size: 1.2rem;
+    padding: .201rem;
+  }
+
+  #info-quemsomos-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #092E58;
+    border-radius: 15px 15px 0 0;
+  }
+
+  #folha-mobile {
+    display: initial;
+    margin-top: 5rem;
+    width: 3.12rem;
+  }
+
+  #title-info-quemsomos-main-container {
+    font-family: 'DM Sans';
+    font-size: 3.84rem;
+    line-height: 3.84rem;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  #desc-info-quemsomos-main-container {
+    margin-top: 5.376rem;
+    width: 90%;
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 2.048rem;
+    line-height: 2.56rem;
+    text-align: center;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    margin-bottom: 3rem;
   }
 }
 
