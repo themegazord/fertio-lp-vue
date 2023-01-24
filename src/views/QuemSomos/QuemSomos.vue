@@ -4,13 +4,8 @@
     <div id="quemsomos-main-container">
       <div id="compo-quemsomos-main-container">
         <RedesSociais id="redes-sociais"/>
-        <img src="https://i.ibb.co/BKWDrFt/Group-removebg-preview.png" alt="Group-removebg-preview"
-          id="subquadrado-esquerda" />
-        <img src="https://i.ibb.co/BKWDrFt/Group-removebg-preview.png" alt="Group-removebg-preview"
-          id="subquadrado-direita" />
-        <img src="https://i.ibb.co/fNWXp0b/Rectangle-4580.png" alt="Rectangle-4580" id="quadrado-claro" />
-        <div id="quadrado-verde">
-        </div>
+        <img src="https://i.ibb.co/LzZ3PKf/circulo-verde.png" alt="circulo-verde" id="circulo-verde-quem-somos">
+        <img src="https://i.ibb.co/XjGDmDB/aro-aberto.png" alt="aro-aberto" id="aro-aberto-quem-somos">
         <img src="https://i.ibb.co/P1TWDCC/shutterstock-2173227909-removebg-preview.png"
           alt="shutterstock-2173227909-removebg-preview" id="veio-qv" />
       </div>
@@ -43,7 +38,88 @@ export default {
 </script>
 
 <style>
+#veio-qv {
+  width: 130%;
+  height: 100%;
+}
 
+#aro-aberto-quem-somos,
+#circulo-verde-quem-somos {
+  width: 60%;
+  height: 60%;
+}
+
+@media screen and (max-width: 2560px) {
+  #quemsomos-main-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: calc(100vh - 90px);
+  }
+  #compo-quemsomos-main-container {
+    position: relative;
+    overflow: hidden;
+    left: 0;
+    bottom: 0;
+  }
+  #circulo-verde-quem-somos,
+  #aro-aberto-quem-somos,
+  #veio-qv,
+  #redes-sociais {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  #veio-qv {
+    left: -15rem;
+  }
+
+  #aro-aberto-quem-somos {
+    left: 15rem;
+  }
+
+  #circulo-verde-quem-somos {
+    left: 12rem;
+  }
+
+  #redes-sociais {
+    z-index: 1;
+    left: 3rem;
+    bottom: 1rem;
+  }
+  #redes-sociais > a {
+    font-size: 3rem;
+    padding: .5rem;
+  }
+
+  #info-quemsomos-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #title-info-quemsomos-main-container {
+    font-family: 'DM Sans';
+    font-size: 4.496rem;
+    line-height: 6rem;
+    font-weight: 700;
+    text-align: center;
+    color: #092E58;
+  }
+
+  #desc-info-quemsomos-main-container {
+    width: 90%;
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 3.2rem;
+    text-align: center;
+    color: #383A47;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+}
 /* @media screen and (max-width: 2560px) {
   #redes-sociais {
     bottom: 200px;
