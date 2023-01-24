@@ -212,11 +212,11 @@ export default {
   }
 
   #veio-qv {
-    left: -9.375em;
+    left: -9.375rem;
   }
 
   #aro-aberto-quem-somos {
-    left: 9.375em;
+    left: 9.375rem;
   }
 
   #circulo-verde-quem-somos {
@@ -283,11 +283,11 @@ export default {
   }
 
   #veio-qv {
-    left: -8.438em;
+    left: -8.438rem;
   }
 
   #aro-aberto-quem-somos {
-    left: 8.438em;
+    left: 8.438rem;
   }
 
   #circulo-verde-quem-somos {
@@ -354,15 +354,26 @@ export default {
   }
 
   #veio-qv {
-    left: -8.004em;
+    width: 160%;
+    height: 100%;
+  }
+
+  #aro-aberto-quem-somos,
+  #circulo-verde-quem-somos {
+    width: 70%;
+    height: 60%;
+  }
+
+  #veio-qv {
+    left: -14rem;
   }
 
   #aro-aberto-quem-somos {
-    left: 8.004em;
+    left: 6.5rem;
   }
 
   #circulo-verde-quem-somos {
-    left: 6.403rem;
+    left: 5.25rem;
   }
 
   #redes-sociais {
@@ -425,15 +436,26 @@ export default {
   }
 
   #veio-qv {
-    left: -7.5em;
+    width: 160%;
+    height: 100%;
+  }
+
+  #aro-aberto-quem-somos,
+  #circulo-verde-quem-somos {
+    width: 70%;
+    height: 60%;
+  }
+
+  #veio-qv {
+    left: -12.5rem;
   }
 
   #aro-aberto-quem-somos {
-    left: 7.5em;
+    left: 6.5rem;
   }
 
   #circulo-verde-quem-somos {
-    left: 6rem;
+    left: 5.25rem;
   }
 
   #redes-sociais {
@@ -468,6 +490,88 @@ export default {
     font-weight: 400;
     font-size: 1.301rem;
     line-height: 1.6rem;
+    text-align: center;
+    color: #383A47;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #quemsomos-main-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: calc(100vh - 90px);
+  }
+  #compo-quemsomos-main-container {
+    position: relative;
+    overflow: hidden;
+    left: 0;
+    bottom: 0;
+  }
+  #circulo-verde-quem-somos,
+  #aro-aberto-quem-somos,
+  #veio-qv,
+  #redes-sociais {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  #veio-qv {
+    width: 160%;
+    height: 95%;
+  }
+
+  #aro-aberto-quem-somos,
+  #circulo-verde-quem-somos {
+    width: 90%;
+    height: 60%;
+  }
+
+  #veio-qv {
+    left: -10rem;
+  }
+
+  #aro-aberto-quem-somos {
+    left: 2rem;
+  }
+
+  #circulo-verde-quem-somos {
+    left: 1rem;
+  }
+
+  #redes-sociais {
+    z-index: 1;
+    left: .5rem;
+    bottom: .4rem;
+  }
+  #redes-sociais > a {
+    font-size: 1.2rem;
+    padding: .201rem;
+  }
+
+  #info-quemsomos-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #title-info-quemsomos-main-container {
+    font-family: 'DM Sans';
+    font-size: 1.798rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+    color: #092E58;
+  }
+
+  #desc-info-quemsomos-main-container {
+    width: 90%;
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 1.041rem;
+    line-height: 1.328rem;
     text-align: center;
     color: #383A47;
     mix-blend-mode: normal;
