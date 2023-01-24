@@ -473,7 +473,7 @@ export default {
 }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
   #navbar {
   background-color: #092E58;
   width: 100vw;
@@ -609,10 +609,11 @@ export default {
     display: flex;
     flex-direction: column;
     width: 0;
-    height: 100vh;
+    height: 100%;
     position: absolute;
     top: 0;
     right: 0;
+    bottom: 0;
     background-color: #FFFFFF;
     z-index: 20;
     gap: 5.625rem;
@@ -682,73 +683,7 @@ export default {
     color: #CFFD00;
   }
 }
-
-@media screen and (max-width: 375px) {
-  #navbar {
-    position: unset;
-    background-color: #092E58;
-    width: 100%;
-    height: 75px;
-    border-radius: 0 0 50px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 90px 0 60px;
-  }
-
-  #logo {
-    height: 75px;
-  }
-
-  #container-navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-  }
-
-  #links-navbar {
-    display: none;
-  }
-
-  .link-navbar {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    color: #FFFFFF;
-    text-decoration: none;
-    transition: .5s;
-  }
-
-  .link-navbar:hover {
-    color: #CFFD00;
-  }
-
-  #button-navbar {
-    display: none;
-  }
-
-  .label-menu {
-    display: block;
-  }
-  .checkbox:checked~#wrapper__menu-lateral {
-    width: 100vw;
-  }
-
-  .checkbox:checked~#menu-lateral {
-    width: calc(100vw / 2);
-  }
-
-  #wrapper__menu-lateral{
-    height: 100vh;
-    width: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 19;
-  }
-
+@media screen and (max-width: 768px) {
   #menu-lateral {
     display: flex;
     flex-direction: column;
@@ -791,16 +726,16 @@ export default {
     align-items: center;
     justify-content: space-between;
     color: #092E58;
-    padding: 1rem;
+    padding: .768rem;
     font-family: Inter;
-    font-size: 1rem;
+    font-size: .768rem;
     font-weight: 700;
   }
 
   .link__menu-lateral a>span {
     display: flex;
-    gap: 1rem;
-    margin-left: 1rem;
+    gap: .768rem;
+    margin-left: .768rem;
   }
 
   #container-rs__menu-lateral {
@@ -811,14 +746,92 @@ export default {
 
   .rede-social__menu-lateral {
     position: absolute;
-    bottom: 2rem;
+    bottom: 1.536rem;
     display: flex;
-    gap: .5rem;
+    gap: .384rem;
   }
 
   #hamburger,
   #close {
-    font-size: 26px;
+    font-size: 1.625rem;
+    color: #FFFFFF;
+  }
+
+  .active {
+    color: #CFFD00;
+  }
+}
+@media screen and (max-width: 425px) {
+  #menu-lateral {
+    display: flex;
+    flex-direction: column;
+    width: 0;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    z-index: 20;
+    gap: 2.625rem;
+    transition: .5s;
+    overflow-x: hidden;
+  }
+
+  #container-logo__menu-lateral {
+    background-color: #092E58;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #logo__menu-lateral {
+    width: 70%;
+    height: 80%;
+  }
+
+  .link__menu-lateral {
+    display: flex;
+    width: 100%;
+  }
+
+  .link__menu-lateral a {
+    margin-inline: 1rem;
+    border-bottom: 0.0625rem solid #4E4E4E;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #092E58;
+    padding: .5rem;
+    font-family: Inter;
+    font-size: .5rem;
+    font-weight: 700;
+  }
+
+  .link__menu-lateral a>span {
+    display: flex;
+    gap: .425rem;
+    margin-left: .425rem;
+  }
+
+  #container-rs__menu-lateral {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .rede-social__menu-lateral {
+    position: absolute;
+    bottom: .85rem;
+    display: flex;
+    gap: .213rem;
+  }
+
+  #hamburger,
+  #close {
+    font-size: 1.625rem;
     color: #FFFFFF;
   }
 
