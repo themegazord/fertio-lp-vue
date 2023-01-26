@@ -176,6 +176,142 @@ export default {
 
 /* Media Width */
 @media screen and (max-width: 2560px) {
+  /* Lado esquerdo */
+  #formulario-main-container {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    background-color: #092E58;
+    width: 100%;
+    height: 100vh;
+  }
+  #info-contato-formulario-main-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3.1rem;
+    margin-top: 4.5rem;
+    color: #FFFFFF;
+    gap: 5.7rem;
+    width: 75%;
+  }
+  #titulo-info-contato {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 5.2rem;
+    align-items: center;
+    letter-spacing: 0.04em;
+  }
+  #meio-info-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
+  #endereco-info-contato,
+  #email-info-contato,
+  #telefones-info-contato {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #endereco-info-contato span,
+  #email-info-contato span,
+  #telefones-info-contato span {
+    font-size: 2.3rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    margin-bottom: 1.5rem;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+
+  #endereco-info-contato p,
+  #email-info-contato p,
+  #telefones-info-contato p {
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+
+  .telefones.pe {
+    padding-top: 2rem;
+  }
+
+  #redes-sociais-form {
+    display: flex;
+    position: absolute;
+    bottom: 4.3rem;
+    left: 12.8rem;
+    font-size: 4.2rem;
+    gap: 2rem;
+  }
+
+  /* Lado direito */
+  #form-contato {
+    background-color: #FFFFFF;
+    border-radius: 38px 0 0 38px;
+  }
+  #form-contato-content {
+    margin: 5rem 20rem 5rem 12rem;
+  }
+  #titulo-form-contato {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 3rem;
+    color: #019A34;
+  }
+  #sub-titulo-form-contato {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+    width: 80%;
+    color: #383A47;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+  #email-telefone-form-contato {
+    display: flex;
+    gap: 1rem;
+  }
+  .email .v-input__slot,
+  .nome-completo .v-input__slot,
+  .telefone .v-input__slot,
+  .assunto .v-input__slot {
+    height: 5rem;
+    font-size: 1.2rem;
+  }
+  .v-input__slot {
+    background: #F5F5F5;
+    border: 1px solid #E1E1E1;
+  }
+  .v-label {
+    font-family: 'Mulish';
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+  #div-button {
+    margin-top: 10rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #submit-enviar {
+    width: 17.5rem;
+    height: 5.4rem;
+    background: #019A34;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px 0px;
+    font-size: 2.8rem;
+    line-height: 3.52rem;
+    color: #FFFFFF;
+    font-family: 'Mulish';
+  }
+}
+
+/* @media screen and (max-width: 2560px) {
   #info-contato-formulario-main-container {
     display: flex;
     flex-direction: column;
@@ -1325,91 +1461,4 @@ export default {
 }
 
 /* Media Height */
-@media screen and (max-height: 1300px) {
-  #info-contato-formulario-main-container {
-    margin-top: 131.4px;
-  }
-
-  #endereco-info-contato {
-    margin-top: 82.3px;
-  }
-}
-@media screen and (max-height: 1220px) {
-  #info-contato-formulario-main-container {
-    margin-top: 100.314px;
-  }
-
-  #endereco-info-contato {
-    margin-top: 40.235px;
-  }
-}
-@media screen and (max-height: 900px) {
-  #info-contato-formulario-main-container {
-    margin-top: 74.002px;
-  }
-
-  #endereco-info-contato {
-    margin-top: 29.682px;
-  }
-
-  #titulo-form-contato {
-    margin-bottom: 24.787px;
-  }
-
-  #form-form-contato {
-    margin-top: 47.803px;
-  }
-}
-@media screen and (max-height: 860px) {
-  #info-contato-formulario-main-container {
-    margin-top: 70.713px;
-  }
-
-  #endereco-info-contato {
-    margin-top: 28.363px;
-  }
-
-  #titulo-form-contato {
-    margin-bottom: 23.685px;
-  }
-
-  #form-form-contato {
-    margin-top: 45.678px;
-  }
-}
-@media screen and (max-height: 770px) {
-  #info-contato-formulario-main-container {
-    margin-top: 70.713px;
-  }
-
-  #endereco-info-contato {
-    margin-top: 28.363px;
-  }
-
-  #titulo-form-contato {
-    margin-bottom: 16.685px;
-  }
-
-  #sub-titulo-form-contato {
-    margin-bottom: 20px;
-  }
-
-  #submit-enviar {
-    width: 150px;
-    height: 50px;
-  }
-
-  #div-button {
-    margin-top: 0px;
-  }
-
-  #sub-titulo-form-contato {
-    font-size: 19px;
-    line-height: 16px;
-  }
-
-  #form-form-contato {
-    margin-top: 45.678px;
-  }
-}
 </style>
