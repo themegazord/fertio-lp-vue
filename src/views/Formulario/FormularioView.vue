@@ -26,7 +26,9 @@
           <p class="telefones pe">(87) 9 8119-8493</p>
         </div>
       </div>
-      <RedeSocial id="redes-sociais-form" />
+      <div id="bottom-info-contato">
+        <RedeSocial id="redes-sociais-form" />
+      </div>
     </div>
     <div id="form-contato">
       <div id="form-contato-content">
@@ -191,7 +193,6 @@ export default {
     margin-top: 4.5rem;
     color: #FFFFFF;
     gap: 5.7rem;
-    width: 75%;
   }
   #titulo-info-contato {
     font-size: 4rem;
@@ -199,11 +200,13 @@ export default {
     line-height: 5.2rem;
     align-items: center;
     letter-spacing: 0.04em;
+    width: 75%;
   }
   #meio-info-contato {
     display: flex;
     flex-direction: column;
     gap: 3.5rem;
+    width: 75%;
   }
 
   #endereco-info-contato,
@@ -238,11 +241,15 @@ export default {
     padding-top: 2rem;
   }
 
+  #bottom-info-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
   #redes-sociais-form {
     display: flex;
-    position: absolute;
-    bottom: 4.3rem;
-    left: 12.8rem;
     font-size: 4.2rem;
     gap: 2rem;
   }
@@ -254,6 +261,10 @@ export default {
   }
   #form-contato-content {
     margin: 5rem 20rem 5rem 12rem;
+  }
+
+  #form-contato-content .v-form {
+    height: calc(100vh - 50rem);
   }
   #titulo-form-contato {
     font-size: 4rem;
@@ -292,7 +303,7 @@ export default {
     line-height: 1.8rem;
   }
   #div-button {
-    margin-top: 10rem;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -306,6 +317,150 @@ export default {
     border-radius: 20px 0px;
     font-size: 2.8rem;
     line-height: 3.52rem;
+    color: #FFFFFF;
+    font-family: 'Mulish';
+  }
+}
+@media screen and (max-width: 1920px) {
+  /* Lado esquerdo */
+  #formulario-main-container {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    background-color: #092E58;
+    width: 100%;
+    height: 100vh;
+  }
+  #info-contato-formulario-main-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.325rem;
+    margin-top: 3.375rem;
+    color: #FFFFFF;
+    gap: 2.275rem;
+  }
+  #titulo-info-contato {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.9rem;
+    align-items: center;
+    letter-spacing: 0.04em;
+    width: 75%;
+  }
+  #meio-info-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 2.625rem;
+    width: 75%;
+  }
+
+  #endereco-info-contato,
+  #email-info-contato,
+  #telefones-info-contato {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #endereco-info-contato span,
+  #email-info-contato span,
+  #telefones-info-contato span {
+    font-size: 1.725rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    margin-bottom: 1.5rem;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+
+  #endereco-info-contato p,
+  #email-info-contato p,
+  #telefones-info-contato p {
+    font-size: 1.650rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+
+  .telefones.pe {
+    padding-top: 1.5rem;
+  }
+
+  #bottom-info-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  #redes-sociais-form {
+    display: flex;
+    font-size: 3.15rem;
+    gap: 1.5rem;
+  }
+
+  /* Lado direito */
+  #form-contato {
+    background-color: #FFFFFF;
+    border-radius: 38px 0 0 38px;
+  }
+  #form-contato-content {
+    margin: 3.75rem 15rem 3.75rem 9rem;
+    height: 100vh;
+  }
+  #form-contato-content .v-form {
+    height: calc(100vh - 50rem);
+  }
+  #titulo-form-contato {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    color: #019A34;
+  }
+  #sub-titulo-form-contato {
+    margin-top: 1.5rem;
+    font-size: 1.875rem;
+    font-weight: 400;
+    line-height: 2.25rem;
+    width: 80%;
+    color: #383A47;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+  #email-telefone-form-contato {
+    display: flex;
+    gap: .75rem;
+  }
+  .email .v-input__slot,
+  .nome-completo .v-input__slot,
+  .telefone .v-input__slot,
+  .assunto .v-input__slot {
+    height: 3.75rem;
+    font-size: .9rem;
+  }
+  .v-input__slot {
+    background: #F5F5F5;
+    border: 1px solid #E1E1E1;
+  }
+  .v-label {
+    font-family: 'Mulish';
+    font-size: .975rem;
+    line-height: 1.350rem;
+  }
+  #div-button {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #submit-enviar {
+    width: 13.125rem;
+    height: 4.05rem;
+    background: #019A34;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px 0px;
+    font-size: 2.1rem;
+    line-height: 2.64rem;
     color: #FFFFFF;
     font-family: 'Mulish';
   }
