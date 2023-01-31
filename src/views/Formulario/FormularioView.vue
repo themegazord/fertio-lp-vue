@@ -70,11 +70,12 @@
             :error-messages="assuntoErros"
             :error="!!assuntoErros.length"
             :style="{ color: !!assuntoErros.length ? 'red' : 'initial' }"
+            :height="windowWidth < 768 ? '4rem' : 'initial'"
             placeholder="Assunto" solo>
           </v-text-field>
           <v-textarea
             v-model="mensagem"
-            rows="7"
+            :rows="windowWidth < 768 ? 3 : 6"
             :error-messages="mensagemErros"
             :error="!!mensagemErros.length"
             :style="{ color: !!mensagemErros.length ? 'red' : 'initial' }"
@@ -102,6 +103,7 @@ export default {
     telefone: '',
     assunto: '',
     mensagem: '',
+    windowWidth: 0,
   }),
   methods: {
     submit() {
@@ -114,6 +116,9 @@ export default {
 
         window.open(`https://api.whatsapp.com/send?phone=5541996267118&text=${fullMessage.replaceAll('$', '%0D')}`);
       }
+    },
+    updateWidth() {
+      this.windowWidth = window.innerWidth;
     },
   },
   mixins: [validationMixin],
@@ -167,6 +172,13 @@ export default {
       if (!this.$v.mensagem.required) erros.push('Por favor, insira sua mensagem');
       return erros;
     },
+  },
+  mounted() {
+    this.windowWidth = window.innerWidth;
+    window.addEventListener('resize', this.updateWidth);
+  },
+  beforeUnmount() {
+    window.removeEventListener('resize', this.updateWidth);
   },
 };
 </script>
@@ -1314,7 +1326,6 @@ export default {
   .nome-completo .v-input__slot,
   .telefone .v-input__slot,
   .assunto .v-input__slot {
-    height: 2.343rem;
     font-size: .562rem;
   }
   .v-input__slot {
@@ -1491,9 +1502,54 @@ export default {
     font-family: 'Mulish';
   }
 }
+@media screen and (max-width: 425px) and (max-height: 820px) {
+  #div-button {
+    margin-top: 1.5rem;
+  }
+}
+@media screen and (max-width: 425px) and (max-height: 725px) {
+  #form-contato {
+    padding-bottom: 6rem;
+  }
+}
+@media screen and (max-width: 425px) and (max-height: 635px) {
+  #form-contato {
+    padding-bottom: 10rem;
+  }
+}
+@media screen and (max-width: 425px) and (max-height: 565px) {
+  #form-contato {
+    padding-bottom: 15rem;
+  }
+}
+@media screen and (max-width: 375px) and (max-height: 650px) {
+  #form-contato {
+    padding-bottom: 10rem;
+  }
+}
+@media screen and (max-width: 375px) and (max-height: 590px) {
+  #form-contato {
+    padding-bottom: 15rem;
+  }
+}
 @media screen and (max-width: 320px) {
    #form-contato-content .v-form {
     height: calc(100vh - 55rem);
+  }
+}
+@media screen and (max-width: 320px) and (max-height: 770px) {
+  #form-contato {
+    padding-bottom: 6rem;
+  }
+}
+@media screen and (max-width: 320px) and (max-height: 680px) {
+  #form-contato {
+    padding-bottom: 10rem;
+  }
+}
+@media screen and (max-width: 320px) and (max-height: 610px) {
+  #form-contato {
+    padding-bottom: 15rem;
   }
 }
 </style>
