@@ -1491,6 +1491,11 @@ export default {
     font-family: 'Mulish';
   }
 }
+@media screen and (max-width: 320px) {
+   #form-contato-content .v-form {
+    height: calc(100vh - 55rem);
+  }
+}
 
 /* @media screen and (max-width: 2560px) {
   #info-contato-formulario-main-container {
