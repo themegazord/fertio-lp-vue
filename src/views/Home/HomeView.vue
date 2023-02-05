@@ -29,9 +29,9 @@
           descricao="A parceria com a Fertio elevou a qualidade e a produtividade de nossas culturas!">
           <img src="../../assets/fazenda_inova.png" alt="Fazenda Inova" id="imagem-esq-card-depoimentos" />
         </Depoimentos>
-        <Depoimentos id="depoimento-cassio-souza" titulo="Cássio de Souza"
+        <Depoimentos id="depoimento-cassio-souza" titulo="Ricardo Santana"
           descricao="Satisfeito! Colhendo ótimos resultados graças a Fertio.">
-          <img src="../../assets/cassio-souza.png" alt="Foto do Cassio de Souza" id="imagem-esq-card-depoimentos">
+          <img src="../../assets/ricardo_santana.png" alt="Foto do Cassio de Souza" id="imagem-esq-card-depoimentos">
         </Depoimentos>
       </div>
     </div>
