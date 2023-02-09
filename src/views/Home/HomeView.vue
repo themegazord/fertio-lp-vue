@@ -29,9 +29,9 @@
           descricao="A parceria com a Fertio elevou a qualidade e a produtividade de nossas culturas!">
           <img src="../../assets/fazenda_inova.png" alt="Fazenda Inova" id="imagem-esq-card-depoimentos" />
         </Depoimentos>
-        <Depoimentos id="depoimento-cassio-souza" titulo="Ricardo Santana"
+        <Depoimentos id="depoimento-henrique-moraes" titulo="Henrique Moraes"
           descricao="Satisfeito! Colhendo ótimos resultados graças a Fertio.">
-          <img src="../../assets/ricardo_santana.png" alt="Foto do Cassio de Souza" id="imagem-esq-card-depoimentos">
+          <img src="../../assets/henrique_moraes.png" alt="Foto do Henrique Moraes" id="imagem-esq-card-depoimentos">
         </Depoimentos>
       </div>
     </div>
@@ -201,7 +201,7 @@ export default {
     right: 7rem;
   }
 
-  #depoimento-cassio-souza {
+  #depoimento-henrique-moraes {
     position: absolute;
     bottom: 10rem;
     right: 45rem;
@@ -339,7 +339,7 @@ export default {
     right: 5.250rem;
   }
 
-  #depoimento-cassio-souza {
+  #depoimento-henrique-moraes {
     position: absolute;
     bottom: 7.329rem;
     right: 33.75rem;
@@ -477,7 +477,7 @@ export default {
     right: 4.375rem;
   }
 
-  #depoimento-cassio-souza {
+  #depoimento-henrique-moraes {
     position: absolute;
     bottom: 7.003rem;
     right: 28.125rem;
@@ -615,7 +615,7 @@ export default {
     right: 3.938rem;
   }
 
-  #depoimento-cassio-souza {
+  #depoimento-henrique-moraes {
     position: absolute;
     bottom: 7.003rem;
     right: 25.313rem;
@@ -753,7 +753,7 @@ export default {
     right: 3.736rem;
   }
 
-  #depoimento-cassio-souza {
+  #depoimento-henrique-moraes {
     position: absolute;
     bottom: 6.254rem;
     right: 24.012rem;
@@ -893,7 +893,7 @@ export default {
     right: 3.501rem;
   }
 
-  #depoimento-cassio-souza {
+  #depoimento-henrique-moraes {
     position: absolute;
     bottom: 6.515rem;
     right: 22.5rem;
@@ -1025,7 +1025,7 @@ export default {
     right: 2.801rem;
   }
 
-  #depoimento-cassio-souza {
+  #depoimento-henrique-moraes {
     position: absolute;
     bottom: 6.254rem;
     right: 18rem;
@@ -1163,7 +1163,7 @@ export default {
     right: 2.801rem;
   }
 
-  #depoimento-cassio-souza {
+  #depoimento-henrique-moraes {
     position: absolute;
     bottom: 6.254rem;
     right: 22rem;
@@ -1301,7 +1301,7 @@ export default {
     right: 2.188rem;
   }
 
-  #depoimento-cassio-souza {
+  #depoimento-henrique-moraes {
     position: absolute;
     bottom: 4.886rem;
     right: 17.188rem;
@@ -1439,7 +1439,7 @@ export default {
     right: 1.823rem;
   }
 
-  #depoimento-cassio-souza {
+  #depoimento-henrique-moraes {
     position: absolute;
     bottom: 4.072rem;
     right: 14.323rem;
@@ -1577,7 +1577,7 @@ export default {
     right: 1.550rem;
   }
 
-  #depoimento-cassio-souza {
+  #depoimento-henrique-moraes {
     position: absolute;
     bottom: 3.461rem;
     right: 12.174rem;
@@ -1715,7 +1715,7 @@ export default {
     right: 1.550rem;
   }
 
-  #depoimento-cassio-souza {
+  #depoimento-henrique-moraes {
     position: absolute;
     bottom: 3.461rem;
     right: 12.174rem;
@@ -1853,7 +1853,7 @@ export default {
     right: 1.323rem;
   }
 
-  #depoimento-cassio-souza {
+  #depoimento-henrique-moraes {
     position: absolute;
     bottom: 2.953rem;
     right: 10.388rem;
@@ -1959,7 +1959,7 @@ export default {
   position: absolute;
 }
 
-#depoimento-cassio-souza {
+#depoimento-henrique-moraes {
   position: absolute;
 }
 
@@ -1969,7 +1969,7 @@ export default {
     right: 150px;
   }
 
-  #depoimento-cassio-souza {
+  #depoimento-henrique-moraes {
     bottom: 200px;
     right: 825px;
   }
@@ -2080,7 +2080,7 @@ export default {
     right: 112.5px;
   }
 
-  #depoimento-cassio-souza {
+  #depoimento-henrique-moraes {
     bottom: 150px;
     right: 618.75px;
   }
@@ -2191,7 +2191,7 @@ export default {
     right: 93.75px;
   }
 
-  #depoimento-cassio-souza {
+  #depoimento-henrique-moraes {
     bottom: 125px;
     right: 515.625px;
   }
@@ -2302,7 +2302,7 @@ export default {
     right: 84.375px;
   }
 
-  #depoimento-cassio-souza {
+  #depoimento-henrique-moraes {
     bottom: 125px;
     right: 464.063px;
   }
@@ -2338,7 +2338,7 @@ export default {
     right: 80.039px;
   }
 
-  #depoimento-cassio-souza {
+  #depoimento-henrique-moraes {
     bottom: 118.576px;
     right: 440.215px;
   }
@@ -2449,7 +2449,7 @@ export default {
     right: 75px;
   }
 
-  #depoimento-cassio-souza {
+  #depoimento-henrique-moraes {
     bottom: 111.111px;
     right: 412.5px;
   }
@@ -2560,7 +2560,7 @@ export default {
     right: 60px;
   }
 
-  #depoimento-cassio-souza {
+  #depoimento-henrique-moraes {
     bottom: 88.889px;
     right: 360px;
   }
@@ -2769,7 +2769,7 @@ export default {
     position: absolute;
   }
 
-  #depoimento-cassio-souza {
+  #depoimento-henrique-moraes {
     position: absolute;
   }
 
@@ -2899,7 +2899,7 @@ export default {
     right: 3rem;
   }
 
-  #depoimento-cassio-souza {
+  #depoimento-henrique-moraes {
     position: absolute;
     bottom: 3rem;
     right: 13rem;
@@ -3022,7 +3022,7 @@ export default {
     right: 3rem;
   }
 
-  #depoimento-cassio-souza {
+  #depoimento-henrique-moraes {
     position: absolute;
     bottom: 3rem;
     right: 10rem;
