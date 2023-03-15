@@ -286,7 +286,7 @@ export default {
       font-size: .982rem;
     }
   }
-  @media screen and (max-width: 1600px){
+  @media screen and (max-width: 1440px){
     #produtos {
       width: 100%;
       height: 100vh;
@@ -368,7 +368,7 @@ export default {
       font-size: .884rem;
     }
   }
-  @media screen and (max-width: 1600px){
+  @media screen and (max-width: 1366px){
     #produtos {
       width: 100%;
       height: 100vh;
@@ -448,6 +448,88 @@ export default {
 
     #kts > p{
       font-size: .839rem;
+    }
+  }
+  @media screen and (max-width: 1280px){
+    #produtos {
+      width: 100%;
+      height: 100vh;
+      background-color: #FFFFFF;
+    }
+
+    #produtos-main-container {
+      display: grid;
+      grid-template-columns: 37.5% 62.5%;
+      height: 100%;
+    }
+
+    #left-produtos-main-container {
+      max-height: calc(100vh - 90px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 4rem 5.5rem 0 2.667rem;
+    }
+
+    #title-left-produtos {
+      font-size: 2.25rem;
+      line-height: 2.6rem;
+      font-weight: 700;
+      color: #575757;
+    }
+
+    #title-left-produtos span {
+      color: #019A34;
+    }
+
+    #redes-sociais-produtos {
+      display: flex;
+      font-size: 2.1rem;
+      gap: 1rem;
+      margin-bottom: 2.667rem;
+    }
+
+    #right-produtos-main-container {
+      max-height: calc(100vh - 90px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      /* gap: 3.8rem; */
+      margin: 2rem 3rem 8rem 0;
+    }
+
+    #thiosul,
+    #cats,
+    #kts {
+      display: flex;
+      gap: 1.25rem;
+    }
+
+    #thiosul > p,
+    #cats > p,
+    #kts > p {
+      font-size: 1rem;
+      line-height: 1.25rem;
+      font-weight: 400;
+      color: #383A47;
+      opacity: .8;
+      text-align: justify;
+    }
+
+    #thiosul > img,
+    #cats > img,
+    #kts > img {
+      width: 10.25rem;
+      height: 7.5rem;
+    }
+
+    #cats {
+      flex-direction: row-reverse;
+      text-align: right;
+    }
+
+    #kts > p{
+      font-size: .786rem;
     }
   }
 </style>
