@@ -204,4 +204,86 @@ export default {
       font-size: 1.178rem;
     }
   }
+  @media screen and (max-width: 1600px){
+    #produtos {
+      width: 100%;
+      height: 100vh;
+      background-color: #FFFFFF;
+    }
+
+    #produtos-main-container {
+      display: grid;
+      grid-template-columns: 37.5% 62.5%;
+      height: 100%;
+    }
+
+    #left-produtos-main-container {
+      max-height: calc(100vh - 90px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 5rem 6.875rem 0 3.33rem;
+    }
+
+    #title-left-produtos {
+      font-size: 2.813rem;
+      line-height: 3.25rem;
+      font-weight: 700;
+      color: #575757;
+    }
+
+    #title-left-produtos span {
+      color: #019A34;
+    }
+
+    #redes-sociais-produtos {
+      display: flex;
+      font-size: 2.625rem;
+      gap: 1.25rem;
+      margin-bottom: 3.33rem;
+    }
+
+    #right-produtos-main-container {
+      max-height: calc(100vh - 90px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      /* gap: 3.8rem; */
+      margin: 3.125rem 3.75rem 8rem 0;
+    }
+
+    #thiosul,
+    #cats,
+    #kts {
+      display: flex;
+      gap: 1.563rem;
+    }
+
+    #thiosul > p,
+    #cats > p,
+    #kts > p {
+      font-size: 1.25rem;
+      line-height: 1.563rem;
+      font-weight: 400;
+      color: #383A47;
+      opacity: .8;
+      text-align: justify;
+    }
+
+    #thiosul > img,
+    #cats > img,
+    #kts > img {
+      width: 12.813rem;
+      height: 9.375rem;
+    }
+
+    #cats {
+      flex-direction: row-reverse;
+      text-align: right;
+    }
+
+    #kts > p{
+      font-size: .982rem;
+    }
+  }
 </style>
