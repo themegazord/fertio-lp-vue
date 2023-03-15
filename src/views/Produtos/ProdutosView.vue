@@ -16,7 +16,7 @@
         </div>
         <div id="cats">
           <img src="../../assets/cats.png" alt="Foto do CaTs">
-          <p><strong>CaTs®</strong> é uma solução neutra a básica, isenta de cloreto, límpida, contendo 6 % de cálcio (Ca p/p) e 10 % de enxofre (S p/p). Um litro de CaTs® contém 75 gramas de cálcio (Ca) e 125 gramas de enxofre (S) na forma de tiossulfato. Pode ser aplicado a uma <strong>grande variedade de culturas.</strong></p>
+          <p><strong>CaTs®</strong> é uma solução neutra a básica, isenta de cloreto, límpida, contendo 6% de cálcio (Ca p/p) e 10% de enxofre (S p/p). Um litro de CaTs® contém 75 gramas de cálcio (Ca) e 125 gramas de enxofre (S) na forma de tiossulfato. Pode ser aplicado a uma <strong>grande variedade de culturas.</strong></p>
         </div>
         <div id="kts">
           <img src="../../assets/kts.png" alt="Foto do KTS">
